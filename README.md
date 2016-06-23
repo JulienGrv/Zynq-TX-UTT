@@ -3,11 +3,9 @@
 
 In this report and associated Vivado source code, we try to evaluate the hardware acceleration perfomance of the Xilinx Zynq-7000 SoC ZC702 using image processing functions in C++, synthesised into HDL block IP with Vivado HLS.
 
-![](art.jpg)
-
 ## Authors
 
-* **Pierre Avital** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Pierre Avital** - *Initial work* - [CptFox](https://github.com/CptFox)
 * **Julien Grave** - *Initial work* - [Darkin](https://github.com/Darkin47/)
 
 See also the list of [contributors](https://github.com/Darkin47/Zynq-TX-UTT/contributors) who participated in this project.
