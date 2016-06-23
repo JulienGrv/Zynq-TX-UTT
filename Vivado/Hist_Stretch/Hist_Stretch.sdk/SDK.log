@@ -1,0 +1,264 @@
+21:36:35 INFO  : Launching XSDB server: xsdb -n -interactive /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/temp_xsdb_launch_script.tcl
+21:36:36 INFO  : XSDB server has started successfully.
+21:36:37 INFO  : Processing command line option -hwspec /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+00:09:25 INFO  : ps7_init is completed.
+00:09:25 INFO  : ps7_post_config is completed.
+00:09:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:11:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:15:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:16:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:16:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:19:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A" && level==0} -index 1' command is executed.
+00:19:36 INFO  : 'fpga -state' command is executed.
+00:19:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:19:37 INFO  : Sourcing of '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:19:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0' command is executed.
+00:19:37 INFO  : Hardware design information is loaded from '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+00:19:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0' command is executed.
+00:19:38 INFO  : 'stop' command is executed.
+00:19:38 INFO  : 'ps7_init' command is executed.
+00:19:38 INFO  : 'ps7_post_config' command is executed.
+00:19:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:19:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:40 INFO  : The application '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/ContrastApp/Debug/ContrastApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:19:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+loadhw /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+dow /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/ContrastApp/Debug/ContrastApp.elf
+----------------End of Script----------------
+
+00:19:40 INFO  : Memory regions updated for context APU
+00:19:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:19:40 INFO  : 'con' command is executed.
+00:19:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+con
+----------------End of Script----------------
+
+00:27:55 INFO  : Disconnected from the channel tcfchan#1.
+00:46:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:19:18 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466463872000,  Project:1466450757000
+01:19:18 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:20:15 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:20:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:20:24 INFO  : 
+01:20:25 INFO  : Updating hardware inferred compiler options for ContrastApp.
+01:20:25 INFO  : Clearing existing target manager status.
+01:20:25 INFO  : Closing and re-opening the MSS file of ther project ContrastApp_bsp
+01:20:27 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:20:27 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+01:21:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:22:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:22:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:23:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:24:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:25:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:26:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:36:43 ERROR : (XSDB Server)Invalid target. Use "connect" command to connect to hw_server/TCF agent
+
+01:36:53 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+01:37:20 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+01:45:12 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+01:45:21 ERROR : (XSDB Server)bad option '-d': -target-id -force -size -value -bin -file -arm-dap -arm-ap -address-space -help
+
+03:17:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466471781000,  Project:1466463872000
+03:17:05 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:17:06 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:17:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:17:15 INFO  : 
+03:17:16 INFO  : Updating hardware inferred compiler options for ContrastApp.
+03:17:16 INFO  : Clearing existing target manager status.
+03:17:16 INFO  : Closing and re-opening the MSS file of ther project ContrastApp_bsp
+03:17:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:17:18 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+03:18:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:19:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:23:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:54:45 INFO  : Launching XSDB server: xsdb -n -interactive /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/temp_xsdb_launch_script.tcl
+14:54:46 INFO  : XSDB server has started successfully.
+14:54:47 INFO  : Processing command line option -hwspec /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+14:54:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:34:01 INFO  : Launching XSDB server: xsdb -n -interactive /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/temp_xsdb_launch_script.tcl
+00:34:02 INFO  : XSDB server has started successfully.
+00:34:04 INFO  : Processing command line option -hwspec /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+00:34:07 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:34:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466548333000,  Project:1466471781000
+00:34:10 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+00:34:10 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:34:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:34:32 INFO  : 
+00:34:33 INFO  : Updating hardware inferred compiler options for ContrastApp.
+00:34:33 INFO  : Clearing existing target manager status.
+00:55:39 INFO  : ps7_init is completed.
+00:55:39 INFO  : ps7_post_config is completed.
+00:55:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:57:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:58:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:03:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:04:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:04:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:29:24 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466551385000,  Project:1466548333000
+01:29:24 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:29:26 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:29:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:29:35 INFO  : 
+01:29:36 INFO  : Updating hardware inferred compiler options for ContrastApp.
+01:29:36 INFO  : Clearing existing target manager status.
+01:29:36 INFO  : Closing and re-opening the MSS file of ther project ContrastApp_bsp
+01:29:38 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:29:38 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+01:30:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:37:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:38:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:38:54 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0x00170000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+01:41:19 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:12:42 INFO  : Launching XSDB server: xsdb -n -interactive /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/temp_xsdb_launch_script.tcl
+02:12:44 INFO  : XSDB server has started successfully.
+02:12:48 INFO  : Processing command line option -hwspec /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+02:12:56 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+02:13:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466553664000,  Project:1466551385000
+02:13:02 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+02:13:02 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:13:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:13:23 INFO  : 
+02:13:24 INFO  : Updating hardware inferred compiler options for ContrastApp.
+02:13:24 INFO  : Clearing existing target manager status.
+02:36:31 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+02:37:09 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+02:37:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:37:10 INFO  : Launching XSDB server: xsdb -n -interactive /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/temp_xsdb_launch_script.tcl
+01:37:11 INFO  : XSDB server has started successfully.
+01:37:13 INFO  : Processing command line option -hwspec /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+01:37:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+01:37:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466638574000,  Project:1466553664000
+01:37:19 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf.
+01:37:19 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:37:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:37:29 INFO  : 
+01:37:30 INFO  : Updating hardware inferred compiler options for ContrastApp.
+01:37:30 INFO  : Clearing existing target manager status.
+01:46:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:47:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:50:08 INFO  : ps7_init is completed.
+01:50:08 INFO  : ps7_post_config is completed.
+01:50:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:54:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A" && level==0} -index 1' command is executed.
+01:54:09 INFO  : 'fpga -state' command is executed.
+01:54:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:54:10 INFO  : Sourcing of '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:54:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0' command is executed.
+01:54:10 INFO  : Hardware design information is loaded from '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:54:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0' command is executed.
+01:54:11 INFO  : 'stop' command is executed.
+01:54:11 INFO  : 'ps7_init' command is executed.
+01:54:12 INFO  : 'ps7_post_config' command is executed.
+01:54:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:54:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:13 INFO  : The application '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/ContrastApp/Release/ContrastApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:54:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+loadhw /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+dow /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/ContrastApp/Release/ContrastApp.elf
+----------------End of Script----------------
+
+01:54:13 INFO  : Memory regions updated for context APU
+01:54:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:14 INFO  : 'con' command is executed.
+01:54:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203355500A"} -index 0
+con
+----------------End of Script----------------
+
+01:54:14 INFO  : Apm configuration has been updated and stored to '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/apmconfigs/apm_default.json' for the project 'design_1_wrapper_hw_platform_0'
+01:54:15 INFO  : Performance data for 'PS' will be exported to the file '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0_Traces/Traces/Run_juin-23_01-54/PS_Trace_juin-23_01-54/trace'
+01:54:15 INFO  : Created tracing project 'design_1_wrapper_hw_platform_0_Traces'
+01:54:15 INFO  : Added tracing folder '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0_Traces/Traces/Run_juin-23_01-54/PS_Trace_juin-23_01-54' into  'design_1_wrapper_hw_platform_0_Traces'
+01:54:15 INFO  : Attempting to open tracing file 'PS_Trace_juin-23_01-54'
+01:55:22 INFO  : Performance data for 'PS' has been exported to the file '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0_Traces/Traces/Run_juin-23_01-54/PS_Trace_juin-23_01-54/trace'
+01:55:22 INFO  : Disconnected from the channel tcfchan#1.
+02:07:29 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1466640402000,  Project:1466638574000
+02:07:29 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:08:11 INFO  : Copied contents of /home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:08:11 ERROR : Failed to closehw "/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf"
+Reason: Cannot close hw design '/home/darkin/Workspace/Vivado/Hist_Stretch/Hist_Stretch.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+Design is not opened in the current session.
+
+02:08:30 INFO  : ps7_init is completed.
+02:08:31 INFO  : ps7_post_config is completed.
+02:08:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:08:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:12:18 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

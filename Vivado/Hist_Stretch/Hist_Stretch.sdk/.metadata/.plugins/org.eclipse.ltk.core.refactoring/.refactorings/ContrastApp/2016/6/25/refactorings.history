@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ContrastApp/src/define&apos; to &apos;define.h&apos;" description="Rename resource &apos;define&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/define" name="define.h" stamp="1466452537577" updateReferences="true"/>
+</session>

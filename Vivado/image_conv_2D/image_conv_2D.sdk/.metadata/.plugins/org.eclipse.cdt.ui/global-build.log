@@ -1,0 +1,1675 @@
+23:14:54 **** Incremental Build of configuration Debug for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180852	 264848	 551936	 997636	  f3904	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+
+23:14:55 Build Finished (took 1s.66ms)
+
+23:14:55 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:15:04 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:17:02 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:22:04 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 179860	 264848	 551936	 996644	  f3524	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:22:15 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:22:39 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:23:27 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:27:45 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:173:24: error: ‘THW_elapsed’ was not declared in this scope
+          (SW_elapsed - THW_elapsed) * 100 / SW_elapsed);
+                        ^
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+make: *** [src/main.o] Erreur 1
+23:27:50 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:137:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:174:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:27:57 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:28:02 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:44:10 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:44:14 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:144:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:144:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:144:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:144:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:144:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:144:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:181:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:181:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:181:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:181:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180072	 264848	 551944	 996864	  f3600	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:44:17 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:52:33 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:52:41 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:53:10 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:54:09 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:54:13 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+23:59:00 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+23:59:05 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:04:15 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180128	 264848	 551944	 996920	  f3638	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:04:21 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:05:00 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:146:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:183:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:05:06 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:13:35 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:147:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:184:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180120	 264848	 551936	 996904	  f3628	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:13:37 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:16:27 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:17:20 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180148	 264848	 551944	 996940	  f364c	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:17:23 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:17:56 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:18:14 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:19:19 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:149:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:149:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:149:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:149:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:149:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:149:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:186:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:186:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:186:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:186:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180148	 264848	 551944	 996940	  f364c	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:19:22 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:19:36 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:19:56 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:20:00 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:20:03 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:20:15 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:24:11 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are: 0x%X\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                        ^
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:72: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:25:01 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:25:12 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:77: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out address are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                             ^
+../src/main.cc:185:77: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:77: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:77: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:25:13 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:25:37 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                               ^
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:25:39 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:26:09 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                               ^
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:26:21 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:26:34 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                               ^
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:26:35 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:26:50 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                               ^
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180056	 264848	 551936	 996840	  f35e8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+00:26:51 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+00:27:13 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:148:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX,imgOut_SW);
+                                                                               ^
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:185:79: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:13:07 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX, imgOut_SW);
+                                                                                ^
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:13:18 **** Clean-only build of configuration Release for project testImgProc ****
+make clean 
+rm -rf  ./src/main.d  ./src/AxiTimerHelper.o ./src/main.o  ./src/AxiTimerHelper.d  testImgProc.elf.size  testImgProc.elf
+ 
+02:13:19 **** Clean-only build of project testImgProc_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+02:13:19 **** Build of project testImgProc_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling axidma
+arm-none-eabi-ar: création de ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling doImgProc
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling tmrctr
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Finished building libraries
+02:13:30 **** Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/AxiTimerHelper.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/AxiTimerHelper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AxiTimerHelper.d" -MT"src/AxiTimerHelper.o" -o "src/AxiTimerHelper.o" "../src/AxiTimerHelper.cpp"
+Finished building: ../src/AxiTimerHelper.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX, imgOut_SW);
+                                                                                ^
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:13:55 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+02:48:22 **** Auto Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX, imgOut_SW);
+                                                                                ^
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:48:33 **** Clean-only build of configuration Release for project testImgProc ****
+make clean 
+rm -rf  ./src/main.d  ./src/AxiTimerHelper.o ./src/main.o  ./src/AxiTimerHelper.d  testImgProc.elf.size  testImgProc.elf
+ 
+02:48:33 **** Clean-only build of project testImgProc_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+02:48:33 **** Build of project testImgProc_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling axidma
+arm-none-eabi-ar: création de ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling doImgProc
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling tmrctr
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Finished building libraries
+02:48:44 **** Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/AxiTimerHelper.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/AxiTimerHelper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AxiTimerHelper.d" -MT"src/AxiTimerHelper.o" -o "src/AxiTimerHelper.o" "../src/AxiTimerHelper.cpp"
+Finished building: ../src/AxiTimerHelper.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX, imgOut_SW);
+                                                                                ^
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:49:09 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+02:50:11 **** Clean-only build of configuration Release for project testImgProc ****
+make clean 
+rm -rf  ./src/main.d  ./src/AxiTimerHelper.o ./src/main.o  ./src/AxiTimerHelper.d  testImgProc.elf.size  testImgProc.elf
+ 
+02:50:11 **** Clean-only build of project testImgProc_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+02:50:11 **** Build of project testImgProc_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_1/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling axidma
+arm-none-eabi-ar: création de ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/doImgProc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/doImgProc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling doImgProc
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling tmrctr
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Finished building libraries
+02:50:22 **** Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/AxiTimerHelper.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/AxiTimerHelper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AxiTimerHelper.d" -MT"src/AxiTimerHelper.o" -o "src/AxiTimerHelper.o" "../src/AxiTimerHelper.cpp"
+Finished building: ../src/AxiTimerHelper.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../testImgProc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+ };
+ ^
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc:41:1: warning: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+          XDoimgproc_Get_kernel_BaseAddress(&doImgProc));
+                                                       ^
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:150:55: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 4 has type ‘u32 {aka long unsigned int}’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+   printf("DMA out addresses are:\n\t0x%X\n\t0x%X\n", m_dma_buffer_RX, imgOut_SW);
+                                                                                ^
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char*’ [-Wformat=]
+../src/main.cc:187:80: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 3 has type ‘unsigned char*’ [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: testImgProc.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../testImgProc_bsp/ps7_cortexa9_0/lib -o "testImgProc.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testImgProc.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testImgProc.elf  |tee "testImgProc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 180024	 264848	 551936	 996808	  f35c8	testImgProc.elf
+Finished building: testImgProc.elf.size
+ 
+02:50:33 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».

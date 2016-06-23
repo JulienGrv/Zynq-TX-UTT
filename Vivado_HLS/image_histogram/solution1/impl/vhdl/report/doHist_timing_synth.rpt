@@ -1,0 +1,67 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Mon Jun 20 20:44:40 2016
+| Host         : darkin-UX303LN running 64-bit elementary OS Freya
+| Command      : report_timing -file ./report/doHist_timing_synth.rpt
+| Design       : doHist
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.473ns  (required time - arrival time)
+  Source:                 idxHist_reg_109_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            idxHist_reg_109_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.761ns  (logic 1.013ns (26.934%)  route 2.748ns (73.066%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.174ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.491ns = ( 11.491 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.665ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=79, unset)           1.665     1.665    ap_clk
+                         FDRE                                         r  idxHist_reg_109_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     2.143 f  idxHist_reg_109_reg[3]/Q
+                         net (fo=6, unplaced)         0.997     3.140    idxHist_reg_109_reg__0[3]
+                         LUT6 (Prop_lut6_I0_O)        0.295     3.435 r  histo_WEN_A[0]_INST_0_i_2/O
+                         net (fo=2, unplaced)         0.460     3.895    histo_WEN_A[0]_INST_0_i_2_n_0
+                         LUT5 (Prop_lut5_I3_O)        0.124     4.019 r  histo_WEN_A[0]_INST_0_i_1/O
+                         net (fo=4, unplaced)         0.473     4.492    doHist_CTRL_BUS_s_axi_U/idxHist_reg_109_reg[2]
+                         LUT3 (Prop_lut3_I2_O)        0.116     4.608 r  doHist_CTRL_BUS_s_axi_U/idxHist_reg_109[8]_i_1/O
+                         net (fo=9, unplaced)         0.818     5.426    idxHist_reg_109
+                         FDRE                                         r  idxHist_reg_109_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=79, unset)           1.491    11.491    ap_clk
+                         FDRE                                         r  idxHist_reg_109_reg[0]/C
+                         clock pessimism              0.000    11.491    
+                         clock uncertainty           -0.035    11.456    
+                         FDRE (Setup_fdre_C_R)       -0.557    10.899    idxHist_reg_109_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.899    
+                         arrival time                          -5.426    
+  -------------------------------------------------------------------
+                         slack                                  5.473    
+
+
+
+

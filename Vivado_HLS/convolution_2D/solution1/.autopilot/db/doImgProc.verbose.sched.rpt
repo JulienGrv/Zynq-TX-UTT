@@ -1,0 +1,943 @@
+
+
+================================================================
+== Vivado HLS Report for 'doImgProc'
+================================================================
+* Date:           Tue Jun 21 16:42:06 2016
+
+* Version:        2016.1 (Build 1538259 on Fri Apr 08 16:12:49 MDT 2016)
+* Project:        convolution_2D
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.34|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2359816|  2359816|  2359817|  2359817|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
+        |          |      Latency      | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- Loop 1  |  2359301|  2359301|        15|          9|          1|  262144|    yes   |
+        |- Loop 2  |      513|      513|         1|          -|          -|     513|    no    |
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 9, depth = 15
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 17
+* Pipeline: 1
+  Pipeline-0: II = 9, D = 15, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	17  / (exitcond1)
+	3  / (!exitcond1)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	2  / true
+17 --> 
+	17  / (!exitcond)
+* FSM state operations: 
+
+ <State 1>: 3.52ns
+ST_1: stg_18 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_data_V), !map !118
+
+ST_1: stg_19 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_keep_V), !map !122
+
+ST_1: stg_20 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_strb_V), !map !126
+
+ST_1: stg_21 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i2* %inStream_V_user_V), !map !130
+
+ST_1: stg_22 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_last_V), !map !134
+
+ST_1: stg_23 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i5* %inStream_V_id_V), !map !138
+
+ST_1: stg_24 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i6* %inStream_V_dest_V), !map !142
+
+ST_1: stg_25 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_data_V), !map !146
+
+ST_1: stg_26 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_keep_V), !map !150
+
+ST_1: stg_27 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_strb_V), !map !154
+
+ST_1: stg_28 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i2* %outStream_V_user_V), !map !158
+
+ST_1: stg_29 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_last_V), !map !162
+
+ST_1: stg_30 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i5* %outStream_V_id_V), !map !166
+
+ST_1: stg_31 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i6* %outStream_V_dest_V), !map !170
+
+ST_1: stg_32 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecBitsMap([9 x i8]* %kernel), !map !174
+
+ST_1: stg_33 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i32 %operation), !map !180
+
+ST_1: stg_34 [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @doImgProc_str) nounwind
+
+ST_1: operation_read [1/1] 1.00ns
+:17  %operation_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %operation)
+
+ST_1: lineBuff_val_0 [1/1] 0.00ns
+:18  %lineBuff_val_0 = alloca [512 x i8], align 1
+
+ST_1: lineBuff_val_1 [1/1] 0.00ns
+:19  %lineBuff_val_1 = alloca [512 x i8], align 1
+
+ST_1: lineBuff_val_2 [1/1] 0.00ns
+:20  %lineBuff_val_2 = alloca [512 x i8], align 1
+
+ST_1: stg_39 [1/1] 0.00ns
+:21  call void (...)* @_ssdm_op_SpecInterface(i8* %inStream_V_data_V, i1* %inStream_V_keep_V, i1* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V, [5 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_1: stg_40 [1/1] 0.00ns
+:22  call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, [5 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_1: stg_41 [1/1] 0.00ns
+:23  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str1807, i32 0, i32 0, i32 0, i32 0, [9 x i8]* @p_str1808, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_1: stg_42 [1/1] 0.00ns
+:24  call void (...)* @_ssdm_op_SpecInterface(i32 %operation, [10 x i8]* @p_str1807, i32 0, i32 0, i32 0, i32 0, [9 x i8]* @p_str1808, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_1: empty [1/1] 0.00ns
+:25  %empty = call i32 (...)* @_ssdm_op_SpecMemCore([9 x i8]* %kernel, [1 x i8]* @p_str, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_44 [1/1] 0.00ns
+:26  call void (...)* @_ssdm_op_SpecInterface([9 x i8]* %kernel, [10 x i8]* @p_str1807, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str1809, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_1: rbegin_i [1/1] 0.00ns
+:27  %rbegin_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([63 x i8]* @hls_KD_KD_LineBuffer_MD_3_MC_s) nounwind
+
+ST_1: rend_i [1/1] 0.00ns
+:28  %rend_i = call i32 (...)* @_ssdm_op_SpecRegionEnd([63 x i8]* @hls_KD_KD_LineBuffer_MD_3_MC_s, i32 %rbegin_i) nounwind
+
+ST_1: kernel_addr [1/1] 0.00ns
+:29  %kernel_addr = getelementptr [9 x i8]* %kernel, i64 0, i64 0
+
+ST_1: kernel_addr_1 [1/1] 0.00ns
+:30  %kernel_addr_1 = getelementptr [9 x i8]* %kernel, i64 0, i64 1
+
+ST_1: kernel_addr_2 [1/1] 0.00ns
+:31  %kernel_addr_2 = getelementptr [9 x i8]* %kernel, i64 0, i64 2
+
+ST_1: kernel_addr_3 [1/1] 0.00ns
+:32  %kernel_addr_3 = getelementptr [9 x i8]* %kernel, i64 0, i64 3
+
+ST_1: kernel_addr_4 [1/1] 0.00ns
+:33  %kernel_addr_4 = getelementptr [9 x i8]* %kernel, i64 0, i64 4
+
+ST_1: kernel_addr_5 [1/1] 0.00ns
+:34  %kernel_addr_5 = getelementptr [9 x i8]* %kernel, i64 0, i64 5
+
+ST_1: kernel_addr_6 [1/1] 0.00ns
+:35  %kernel_addr_6 = getelementptr [9 x i8]* %kernel, i64 0, i64 6
+
+ST_1: kernel_addr_7 [1/1] 0.00ns
+:36  %kernel_addr_7 = getelementptr [9 x i8]* %kernel, i64 0, i64 7
+
+ST_1: kernel_addr_8 [1/1] 0.00ns
+:37  %kernel_addr_8 = getelementptr [9 x i8]* %kernel, i64 0, i64 8
+
+ST_1: sel_tmp2 [1/1] 2.52ns
+:38  %sel_tmp2 = icmp eq i32 %operation_read, 2
+
+ST_1: sel_tmp5 [1/1] 2.52ns
+:39  %sel_tmp5 = icmp eq i32 %operation_read, 1
+
+ST_1: sel_tmp8 [1/1] 2.52ns
+:40  %sel_tmp8 = icmp eq i32 %operation_read, 0
+
+ST_1: stg_59 [1/1] 1.57ns
+:41  br label %1
+
+
+ <State 2>: 3.90ns
+ST_2: tmp_id_V [1/1] 0.00ns
+:0  %tmp_id_V = phi i5 [ undef, %0 ], [ %tmp_id_V_1, %._crit_edge75 ]
+
+ST_2: tmp_user_V [1/1] 0.00ns
+:1  %tmp_user_V = phi i2 [ undef, %0 ], [ %tmp_user_V_1, %._crit_edge75 ]
+
+ST_2: tmp_strb_V [1/1] 0.00ns
+:2  %tmp_strb_V = phi i1 [ undef, %0 ], [ %tmp_strb_V_1, %._crit_edge75 ]
+
+ST_2: tmp_keep_V [1/1] 0.00ns
+:3  %tmp_keep_V = phi i1 [ undef, %0 ], [ %tmp_keep_V_1, %._crit_edge75 ]
+
+ST_2: tmp_dest_V [1/1] 0.00ns
+:4  %tmp_dest_V = phi i6 [ undef, %0 ], [ %tmp_dest_V_1, %._crit_edge75 ]
+
+ST_2: col_assign [1/1] 0.00ns
+:5  %col_assign = phi i32 [ 0, %0 ], [ %idxCol_1, %._crit_edge75 ]
+
+ST_2: idxRow [1/1] 0.00ns
+:6  %idxRow = phi i32 [ 0, %0 ], [ %idxRow_1, %._crit_edge75 ]
+
+ST_2: pixConvolved [1/1] 0.00ns
+:7  %pixConvolved = phi i32 [ 0, %0 ], [ %pixConvolved_2, %._crit_edge75 ]
+
+ST_2: countWait [1/1] 0.00ns
+:8  %countWait = phi i19 [ 1, %0 ], [ %phitmp, %._crit_edge75 ]
+
+ST_2: exitcond1 [1/1] 2.33ns
+:9  %exitcond1 = icmp eq i19 %countWait, -262143
+
+ST_2: stg_70 [1/1] 1.57ns
+:10  br i1 %exitcond1, label %.preheader, label %.preheader.preheader.i.i_ifconv
+
+ST_2: tmp [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:1  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str1810)
+
+ST_2: tmp_s [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:10  %tmp_s = zext i32 %col_assign to i64
+
+ST_2: lineBuff_val_1_addr [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:11  %lineBuff_val_1_addr = getelementptr [512 x i8]* %lineBuff_val_1, i64 0, i64 %tmp_s
+
+ST_2: lineBuff_val_1_load [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:12  %lineBuff_val_1_load = load i8* %lineBuff_val_1_addr, align 1
+
+ST_2: lineBuff_val_2_addr [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:15  %lineBuff_val_2_addr = getelementptr [512 x i8]* %lineBuff_val_2, i64 0, i64 %tmp_s
+
+ST_2: lineBuff_val_2_load [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:16  %lineBuff_val_2_load = load i8* %lineBuff_val_2_addr, align 1
+
+ST_2: kernel_load [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:23  %kernel_load = load i8* %kernel_addr, align 1
+
+ST_2: tmp_3 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:78  %tmp_3 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %idxRow, i32 1, i32 31)
+
+ST_2: icmp [1/1] 2.50ns
+.preheader.preheader.i.i_ifconv:79  %icmp = icmp sgt i31 %tmp_3, 0
+
+ST_2: tmp_4 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:80  %tmp_4 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %col_assign, i32 1, i32 31)
+
+ST_2: icmp4 [1/1] 2.50ns
+.preheader.preheader.i.i_ifconv:81  %icmp4 = icmp sgt i31 %tmp_4, 0
+
+ST_2: or_cond [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:82  %or_cond = and i1 %icmp, %icmp4
+
+ST_2: tmp_11 [1/1] 2.52ns
+.preheader.preheader.i.i_ifconv:155  %tmp_11 = icmp slt i32 %col_assign, 511
+
+ST_2: idxCol [1/1] 2.44ns
+.preheader.preheader.i.i_ifconv:156  %idxCol = add nsw i32 1, %col_assign
+
+ST_2: idxRow_2 [1/1] 2.44ns
+.preheader.preheader.i.i_ifconv:157  %idxRow_2 = add nsw i32 1, %idxRow
+
+ST_2: idxCol_1 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:158  %idxCol_1 = select i1 %tmp_11, i32 %idxCol, i32 0
+
+ST_2: idxRow_1 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:159  %idxRow_1 = select i1 %tmp_11, i32 %idxRow, i32 %idxRow_2
+
+ST_2: tmp_12 [1/1] 2.33ns
+.preheader.preheader.i.i_ifconv:161  %tmp_12 = icmp ugt i19 %countWait, 513
+
+ST_2: stg_89 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:162  br i1 %tmp_12, label %2, label %._crit_edge75
+
+ST_2: empty_11 [1/1] 0.00ns
+._crit_edge75:0  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str1810, i32 %tmp)
+
+ST_2: phitmp [1/1] 2.08ns
+._crit_edge75:1  %phitmp = add i19 %countWait, 1
+
+ST_2: stg_92 [1/1] 0.00ns
+._crit_edge75:2  br label %1
+
+
+ <State 3>: 5.42ns
+ST_3: empty_10 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:3  %empty_10 = call { i8, i1, i1, i2, i1, i5, i6 } @_ssdm_op_Read.axis.volatile.i8P.i1P.i1P.i2P.i1P.i5P.i6P(i8* %inStream_V_data_V, i1* %inStream_V_keep_V, i1* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V)
+
+ST_3: tmp_data_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:4  %tmp_data_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 0
+
+ST_3: tmp_keep_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:5  %tmp_keep_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 1
+
+ST_3: tmp_strb_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:6  %tmp_strb_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 2
+
+ST_3: tmp_user_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:7  %tmp_user_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 3
+
+ST_3: tmp_id_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:8  %tmp_id_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 5
+
+ST_3: tmp_dest_V_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:9  %tmp_dest_V_1 = extractvalue { i8, i1, i1, i2, i1, i5, i6 } %empty_10, 6
+
+ST_3: lineBuff_val_1_load [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:12  %lineBuff_val_1_load = load i8* %lineBuff_val_1_addr, align 1
+
+ST_3: lineBuff_val_0_addr [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:13  %lineBuff_val_0_addr = getelementptr [512 x i8]* %lineBuff_val_0, i64 0, i64 %tmp_s
+
+ST_3: stg_102 [1/1] 2.71ns
+.preheader.preheader.i.i_ifconv:14  store i8 %lineBuff_val_1_load, i8* %lineBuff_val_0_addr, align 1
+
+ST_3: lineBuff_val_2_load [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:16  %lineBuff_val_2_load = load i8* %lineBuff_val_2_addr, align 1
+
+ST_3: stg_104 [1/1] 2.71ns
+.preheader.preheader.i.i_ifconv:17  store i8 %lineBuff_val_2_load, i8* %lineBuff_val_1_addr, align 1
+
+ST_3: stg_105 [1/1] 2.71ns
+.preheader.preheader.i.i_ifconv:18  store i8 %tmp_data_V_1, i8* %lineBuff_val_2_addr, align 1
+
+ST_3: kernel_load [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:23  %kernel_load = load i8* %kernel_addr, align 1
+
+ST_3: kernel_load_1 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:31  %kernel_load_1 = load i8* %kernel_addr_1, align 1
+
+
+ <State 4>: 5.18ns
+ST_4: tmp_7 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:19  %tmp_7 = zext i32 %pixConvolved to i64
+
+ST_4: lineBuff_val_0_addr_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:20  %lineBuff_val_0_addr_1 = getelementptr [512 x i8]* %lineBuff_val_0, i64 0, i64 %tmp_7
+
+ST_4: lineBuff_val_0_load [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:21  %lineBuff_val_0_load = load i8* %lineBuff_val_0_addr_1, align 1
+
+ST_4: pixConvolved_3 [1/1] 2.44ns
+.preheader.preheader.i.i_ifconv:26  %pixConvolved_3 = add nsw i32 1, %pixConvolved
+
+ST_4: tmp_25_0_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:27  %tmp_25_0_1 = zext i32 %pixConvolved_3 to i64
+
+ST_4: lineBuff_val_0_addr_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:28  %lineBuff_val_0_addr_2 = getelementptr [512 x i8]* %lineBuff_val_0, i64 0, i64 %tmp_25_0_1
+
+ST_4: lineBuff_val_0_load_1 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:29  %lineBuff_val_0_load_1 = load i8* %lineBuff_val_0_addr_2, align 1
+
+ST_4: kernel_load_1 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:31  %kernel_load_1 = load i8* %kernel_addr_1, align 1
+
+ST_4: col_assign_1_0_2 [1/1] 2.44ns
+.preheader.preheader.i.i_ifconv:34  %col_assign_1_0_2 = add nsw i32 2, %pixConvolved
+
+ST_4: kernel_load_2 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:39  %kernel_load_2 = load i8* %kernel_addr_2, align 1
+
+ST_4: lineBuff_val_1_addr_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:42  %lineBuff_val_1_addr_1 = getelementptr [512 x i8]* %lineBuff_val_1, i64 0, i64 %tmp_7
+
+ST_4: lineBuff_val_1_load_1 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:43  %lineBuff_val_1_load_1 = load i8* %lineBuff_val_1_addr_1, align 1
+
+ST_4: lineBuff_val_1_addr_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:48  %lineBuff_val_1_addr_2 = getelementptr [512 x i8]* %lineBuff_val_1, i64 0, i64 %tmp_25_0_1
+
+ST_4: lineBuff_val_1_load_2 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:49  %lineBuff_val_1_load_2 = load i8* %lineBuff_val_1_addr_2, align 1
+
+ST_4: lineBuff_val_2_addr_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:60  %lineBuff_val_2_addr_1 = getelementptr [512 x i8]* %lineBuff_val_2, i64 0, i64 %tmp_7
+
+ST_4: lineBuff_val_2_load_1 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:61  %lineBuff_val_2_load_1 = load i8* %lineBuff_val_2_addr_1, align 1
+
+ST_4: lineBuff_val_2_addr_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:66  %lineBuff_val_2_addr_2 = getelementptr [512 x i8]* %lineBuff_val_2, i64 0, i64 %tmp_25_0_1
+
+ST_4: lineBuff_val_2_load_2 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:67  %lineBuff_val_2_load_2 = load i8* %lineBuff_val_2_addr_2, align 1
+
+ST_4: sel_tmp1 [1/1] 0.00ns (grouped into LUT with out node sel_tmp4)
+.preheader.preheader.i.i_ifconv:145  %sel_tmp1 = select i1 %or_cond, i32 %pixConvolved_3, i32 %pixConvolved
+
+ST_4: sel_tmp3 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:146  %sel_tmp3 = and i1 %or_cond, %sel_tmp2
+
+ST_4: sel_tmp4 [1/1] 1.37ns (out node of the LUT)
+.preheader.preheader.i.i_ifconv:147  %sel_tmp4 = select i1 %sel_tmp3, i32 %pixConvolved_3, i32 %sel_tmp1
+
+ST_4: sel_tmp6 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:148  %sel_tmp6 = and i1 %or_cond, %sel_tmp5
+
+ST_4: sel_tmp7 [1/1] 0.00ns (grouped into LUT with out node pixConvolved_2)
+.preheader.preheader.i.i_ifconv:149  %sel_tmp7 = select i1 %sel_tmp6, i32 %pixConvolved_3, i32 %sel_tmp4
+
+ST_4: sel_tmp9 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:150  %sel_tmp9 = and i1 %or_cond, %sel_tmp8
+
+ST_4: pixConvolved_1 [1/1] 0.00ns (grouped into LUT with out node pixConvolved_2)
+.preheader.preheader.i.i_ifconv:151  %pixConvolved_1 = select i1 %sel_tmp9, i32 %pixConvolved_3, i32 %sel_tmp7
+
+ST_4: pixConvolved_2 [1/1] 1.37ns (out node of the LUT)
+.preheader.preheader.i.i_ifconv:160  %pixConvolved_2 = select i1 %tmp_11, i32 %pixConvolved_1, i32 0
+
+
+ <State 5>: 2.71ns
+ST_5: lineBuff_val_0_load [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:21  %lineBuff_val_0_load = load i8* %lineBuff_val_0_addr_1, align 1
+
+ST_5: lineBuff_val_0_load_1 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:29  %lineBuff_val_0_load_1 = load i8* %lineBuff_val_0_addr_2, align 1
+
+ST_5: tmp_25_0_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:35  %tmp_25_0_2 = zext i32 %col_assign_1_0_2 to i64
+
+ST_5: lineBuff_val_0_addr_3 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:36  %lineBuff_val_0_addr_3 = getelementptr [512 x i8]* %lineBuff_val_0, i64 0, i64 %tmp_25_0_2
+
+ST_5: lineBuff_val_0_load_2 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:37  %lineBuff_val_0_load_2 = load i8* %lineBuff_val_0_addr_3, align 1
+
+ST_5: kernel_load_2 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:39  %kernel_load_2 = load i8* %kernel_addr_2, align 1
+
+ST_5: lineBuff_val_1_load_1 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:43  %lineBuff_val_1_load_1 = load i8* %lineBuff_val_1_addr_1, align 1
+
+ST_5: kernel_load_3 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:45  %kernel_load_3 = load i8* %kernel_addr_3, align 1
+
+ST_5: lineBuff_val_1_load_2 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:49  %lineBuff_val_1_load_2 = load i8* %lineBuff_val_1_addr_2, align 1
+
+ST_5: lineBuff_val_1_addr_3 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:54  %lineBuff_val_1_addr_3 = getelementptr [512 x i8]* %lineBuff_val_1, i64 0, i64 %tmp_25_0_2
+
+ST_5: lineBuff_val_1_load_3 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:55  %lineBuff_val_1_load_3 = load i8* %lineBuff_val_1_addr_3, align 1
+
+ST_5: lineBuff_val_2_load_1 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:61  %lineBuff_val_2_load_1 = load i8* %lineBuff_val_2_addr_1, align 1
+
+ST_5: lineBuff_val_2_load_2 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:67  %lineBuff_val_2_load_2 = load i8* %lineBuff_val_2_addr_2, align 1
+
+ST_5: lineBuff_val_2_addr_3 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:72  %lineBuff_val_2_addr_3 = getelementptr [512 x i8]* %lineBuff_val_2, i64 0, i64 %tmp_25_0_2
+
+ST_5: lineBuff_val_2_load_3 [2/2] 2.71ns
+.preheader.preheader.i.i_ifconv:73  %lineBuff_val_2_load_3 = load i8* %lineBuff_val_2_addr_3, align 1
+
+
+ <State 6>: 6.38ns
+ST_6: val [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:22  %val = zext i8 %lineBuff_val_0_load to i16
+
+ST_6: tmp_5 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:24  %tmp_5 = sext i8 %kernel_load to i16
+
+ST_6: window_val_0_0 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:25  %window_val_0_0 = mul i16 %tmp_5, %val
+
+ST_6: lineBuff_val_0_load_2 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:37  %lineBuff_val_0_load_2 = load i8* %lineBuff_val_0_addr_3, align 1
+
+ST_6: kernel_load_3 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:45  %kernel_load_3 = load i8* %kernel_addr_3, align 1
+
+ST_6: kernel_load_4 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:51  %kernel_load_4 = load i8* %kernel_addr_4, align 1
+
+ST_6: lineBuff_val_1_load_3 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:55  %lineBuff_val_1_load_3 = load i8* %lineBuff_val_1_addr_3, align 1
+
+ST_6: lineBuff_val_2_load_3 [1/2] 2.71ns
+.preheader.preheader.i.i_ifconv:73  %lineBuff_val_2_load_3 = load i8* %lineBuff_val_2_addr_3, align 1
+
+ST_6: tmp_14 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:104  %tmp_14 = trunc i16 %window_val_0_0 to i8
+
+
+ <State 7>: 8.34ns
+ST_7: val_0_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:30  %val_0_1 = zext i8 %lineBuff_val_0_load_1 to i16
+
+ST_7: tmp_29_0_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:32  %tmp_29_0_1 = sext i8 %kernel_load_1 to i16
+
+ST_7: window_val_0_1 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:33  %window_val_0_1 = mul i16 %tmp_29_0_1, %val_0_1
+
+ST_7: kernel_load_4 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:51  %kernel_load_4 = load i8* %kernel_addr_4, align 1
+
+ST_7: kernel_load_5 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:57  %kernel_load_5 = load i8* %kernel_addr_5, align 1
+
+ST_7: tmp4 [1/1] 1.96ns
+.preheader.preheader.i.i_ifconv:86  %tmp4 = add i16 %window_val_0_0, %window_val_0_1
+
+ST_7: tmp_15 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:105  %tmp_15 = trunc i16 %window_val_0_1 to i8
+
+
+ <State 8>: 6.38ns
+ST_8: val_0_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:38  %val_0_2 = zext i8 %lineBuff_val_0_load_2 to i16
+
+ST_8: tmp_29_0_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:40  %tmp_29_0_2 = sext i8 %kernel_load_2 to i16
+
+ST_8: window_val_0_2 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:41  %window_val_0_2 = mul i16 %tmp_29_0_2, %val_0_2
+
+ST_8: kernel_load_5 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:57  %kernel_load_5 = load i8* %kernel_addr_5, align 1
+
+ST_8: kernel_load_6 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:63  %kernel_load_6 = load i8* %kernel_addr_6, align 1
+
+ST_8: tmp_16 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:108  %tmp_16 = trunc i16 %window_val_0_2 to i8
+
+
+ <State 9>: 6.74ns
+ST_9: val_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:44  %val_1 = zext i8 %lineBuff_val_1_load_1 to i16
+
+ST_9: tmp_29_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:46  %tmp_29_1 = sext i8 %kernel_load_3 to i16
+
+ST_9: window_val_1_0 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:47  %window_val_1_0 = mul i16 %tmp_29_1, %val_1
+
+ST_9: kernel_load_6 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:63  %kernel_load_6 = load i8* %kernel_addr_6, align 1
+
+ST_9: kernel_load_7 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:69  %kernel_load_7 = load i8* %kernel_addr_7, align 1
+
+ST_9: tmp_5_0_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:106  %tmp_5_0_1_i = icmp ult i8 %tmp_15, %tmp_14
+
+ST_9: valInWindow_0_minVal_1_0_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:107  %valInWindow_0_minVal_1_0_1_i = select i1 %tmp_5_0_1_i, i8 %tmp_15, i8 %tmp_14
+
+ST_9: tmp_5_0_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:109  %tmp_5_0_2_i = icmp ult i8 %tmp_16, %valInWindow_0_minVal_1_0_1_i
+
+ST_9: valInWindow_0_minVal_1_0_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:110  %valInWindow_0_minVal_1_0_2_i = select i1 %tmp_5_0_2_i, i8 %tmp_16, i8 %valInWindow_0_minVal_1_0_1_i
+
+ST_9: tmp_17 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:111  %tmp_17 = trunc i16 %window_val_1_0 to i8
+
+ST_9: tmp_11_0_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:129  %tmp_11_0_1_i = icmp ugt i8 %tmp_15, %tmp_14
+
+ST_9: valInWindow_0_maxVal_1_0_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:130  %valInWindow_0_maxVal_1_0_1_i = select i1 %tmp_11_0_1_i, i8 %tmp_15, i8 %tmp_14
+
+ST_9: tmp_11_0_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:131  %tmp_11_0_2_i = icmp ugt i8 %tmp_16, %valInWindow_0_maxVal_1_0_1_i
+
+ST_9: valInWindow_0_maxVal_1_0_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:132  %valInWindow_0_maxVal_1_0_2_i = select i1 %tmp_11_0_2_i, i8 %tmp_16, i8 %valInWindow_0_maxVal_1_0_1_i
+
+
+ <State 10>: 6.38ns
+ST_10: val_1_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:50  %val_1_1 = zext i8 %lineBuff_val_1_load_2 to i16
+
+ST_10: tmp_29_1_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:52  %tmp_29_1_1 = sext i8 %kernel_load_4 to i16
+
+ST_10: window_val_1_1 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:53  %window_val_1_1 = mul i16 %tmp_29_1_1, %val_1_1
+
+ST_10: kernel_load_7 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:69  %kernel_load_7 = load i8* %kernel_addr_7, align 1
+
+ST_10: kernel_load_8 [2/2] 2.39ns
+.preheader.preheader.i.i_ifconv:75  %kernel_load_8 = load i8* %kernel_addr_8, align 1
+
+ST_10: tmp_5_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:112  %tmp_5_1_i = icmp ult i8 %tmp_17, %valInWindow_0_minVal_1_0_2_i
+
+ST_10: valInWindow_0_minVal_1_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:113  %valInWindow_0_minVal_1_1_i = select i1 %tmp_5_1_i, i8 %tmp_17, i8 %valInWindow_0_minVal_1_0_2_i
+
+ST_10: tmp_18 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:114  %tmp_18 = trunc i16 %window_val_1_1 to i8
+
+ST_10: tmp_11_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:133  %tmp_11_1_i = icmp ugt i8 %tmp_17, %valInWindow_0_maxVal_1_0_2_i
+
+ST_10: valInWindow_0_maxVal_1_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:134  %valInWindow_0_maxVal_1_1_i = select i1 %tmp_11_1_i, i8 %tmp_17, i8 %valInWindow_0_maxVal_1_0_2_i
+
+
+ <State 11>: 6.38ns
+ST_11: val_1_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:56  %val_1_2 = zext i8 %lineBuff_val_1_load_3 to i16
+
+ST_11: tmp_29_1_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:58  %tmp_29_1_2 = sext i8 %kernel_load_5 to i16
+
+ST_11: window_val_1_2 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:59  %window_val_1_2 = mul i16 %tmp_29_1_2, %val_1_2
+
+ST_11: kernel_load_8 [1/2] 2.39ns
+.preheader.preheader.i.i_ifconv:75  %kernel_load_8 = load i8* %kernel_addr_8, align 1
+
+ST_11: tmp_5_1_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:115  %tmp_5_1_1_i = icmp ult i8 %tmp_18, %valInWindow_0_minVal_1_1_i
+
+ST_11: valInWindow_0_minVal_1_1_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:116  %valInWindow_0_minVal_1_1_1_i = select i1 %tmp_5_1_1_i, i8 %tmp_18, i8 %valInWindow_0_minVal_1_1_i
+
+ST_11: tmp_19 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:117  %tmp_19 = trunc i16 %window_val_1_2 to i8
+
+ST_11: tmp_11_1_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:135  %tmp_11_1_1_i = icmp ugt i8 %tmp_18, %valInWindow_0_maxVal_1_1_i
+
+ST_11: valInWindow_0_maxVal_1_1_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:136  %valInWindow_0_maxVal_1_1_1_i = select i1 %tmp_11_1_1_i, i8 %tmp_18, i8 %valInWindow_0_maxVal_1_1_i
+
+
+ <State 12>: 6.38ns
+ST_12: val_s [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:62  %val_s = zext i8 %lineBuff_val_2_load_1 to i16
+
+ST_12: tmp_29_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:64  %tmp_29_2 = sext i8 %kernel_load_6 to i16
+
+ST_12: window_val_2_0 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:65  %window_val_2_0 = mul i16 %tmp_29_2, %val_s
+
+ST_12: tmp_5_1_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:118  %tmp_5_1_2_i = icmp ult i8 %tmp_19, %valInWindow_0_minVal_1_1_1_i
+
+ST_12: valInWindow_0_minVal_1_1_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:119  %valInWindow_0_minVal_1_1_2_i = select i1 %tmp_5_1_2_i, i8 %tmp_19, i8 %valInWindow_0_minVal_1_1_1_i
+
+ST_12: tmp_20 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:120  %tmp_20 = trunc i16 %window_val_2_0 to i8
+
+ST_12: tmp_11_1_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:137  %tmp_11_1_2_i = icmp ugt i8 %tmp_19, %valInWindow_0_maxVal_1_1_1_i
+
+ST_12: valInWindow_0_maxVal_1_1_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:138  %valInWindow_0_maxVal_1_1_2_i = select i1 %tmp_11_1_2_i, i8 %tmp_19, i8 %valInWindow_0_maxVal_1_1_1_i
+
+
+ <State 13>: 8.34ns
+ST_13: val_233_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:68  %val_233_1 = zext i8 %lineBuff_val_2_load_2 to i16
+
+ST_13: tmp_29_2_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:70  %tmp_29_2_1 = sext i8 %kernel_load_7 to i16
+
+ST_13: window_val_2_1 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:71  %window_val_2_1 = mul i16 %tmp_29_2_1, %val_233_1
+
+ST_13: tmp1 [1/1] 1.96ns
+.preheader.preheader.i.i_ifconv:83  %tmp1 = add i16 %window_val_2_1, %window_val_2_0
+
+ST_13: tmp_5_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:121  %tmp_5_2_i = icmp ult i8 %tmp_20, %valInWindow_0_minVal_1_1_2_i
+
+ST_13: valInWindow_0_minVal_1_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:122  %valInWindow_0_minVal_1_2_i = select i1 %tmp_5_2_i, i8 %tmp_20, i8 %valInWindow_0_minVal_1_1_2_i
+
+ST_13: tmp_21 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:123  %tmp_21 = trunc i16 %window_val_2_1 to i8
+
+ST_13: tmp_11_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:139  %tmp_11_2_i = icmp ugt i8 %tmp_20, %valInWindow_0_maxVal_1_1_2_i
+
+ST_13: valInWindow_0_maxVal_1_2_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:140  %valInWindow_0_maxVal_1_2_i = select i1 %tmp_11_2_i, i8 %tmp_20, i8 %valInWindow_0_maxVal_1_1_2_i
+
+
+ <State 14>: 6.38ns
+ST_14: val_233_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:74  %val_233_2 = zext i8 %lineBuff_val_2_load_3 to i16
+
+ST_14: tmp_29_2_2 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:76  %tmp_29_2_2 = sext i8 %kernel_load_8 to i16
+
+ST_14: window_val_2_2 [1/1] 6.38ns
+.preheader.preheader.i.i_ifconv:77  %window_val_2_2 = mul i16 %tmp_29_2_2, %val_233_2
+
+ST_14: tmp2 [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:84  %tmp2 = add i16 %window_val_1_1, %window_val_1_2
+
+ST_14: tmp3 [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:85  %tmp3 = add i16 %tmp1, %tmp2
+
+ST_14: tmp_5_2_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:124  %tmp_5_2_1_i = icmp ult i8 %tmp_21, %valInWindow_0_minVal_1_2_i
+
+ST_14: valInWindow_0_minVal_1_2_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:125  %valInWindow_0_minVal_1_2_1_i = select i1 %tmp_5_2_1_i, i8 %tmp_21, i8 %valInWindow_0_minVal_1_2_i
+
+ST_14: tmp_22 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:126  %tmp_22 = trunc i16 %window_val_2_2 to i8
+
+ST_14: tmp_11_2_1_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:141  %tmp_11_2_1_i = icmp ugt i8 %tmp_21, %valInWindow_0_maxVal_1_2_i
+
+ST_14: valInWindow_0_maxVal_1_2_1_i [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:142  %valInWindow_0_maxVal_1_2_1_i = select i1 %tmp_11_2_1_i, i8 %tmp_21, i8 %valInWindow_0_maxVal_1_2_i
+
+
+ <State 15>: 6.92ns
+ST_15: tmp5 [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:87  %tmp5 = add i16 %window_val_2_2, %window_val_0_2
+
+ST_15: tmp6 [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:88  %tmp6 = add i16 %window_val_1_0, %tmp5
+
+ST_15: tmp7 [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:89  %tmp7 = add i16 %tmp4, %tmp6
+
+ST_15: valOutput [1/1] 1.73ns
+.preheader.preheader.i.i_ifconv:90  %valOutput = add i16 %tmp3, %tmp7
+
+ST_15: tmp_6 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:92  %tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %valOutput, i32 15)
+
+ST_15: tmp_9 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:96  %tmp_9 = call i13 @_ssdm_op_PartSelect.i13.i16.i32.i32(i16 %valOutput, i32 3, i32 15)
+
+ST_15: tmp_5_2_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:127  %tmp_5_2_2_i = icmp ult i8 %tmp_22, %valInWindow_0_minVal_1_2_1_i
+
+ST_15: valInWindow_0_minVal_1_2_2_i [1/1] 0.00ns (grouped into LUT with out node sel_tmp10)
+.preheader.preheader.i.i_ifconv:128  %valInWindow_0_minVal_1_2_2_i = select i1 %tmp_5_2_2_i, i8 %tmp_22, i8 %valInWindow_0_minVal_1_2_1_i
+
+ST_15: tmp_11_2_2_i [1/1] 2.00ns
+.preheader.preheader.i.i_ifconv:143  %tmp_11_2_2_i = icmp ugt i8 %tmp_22, %valInWindow_0_maxVal_1_2_1_i
+
+ST_15: valInWindow_0_maxVal_1_2_2_i [1/1] 0.00ns (grouped into LUT with out node sel_tmp)
+.preheader.preheader.i.i_ifconv:144  %valInWindow_0_maxVal_1_2_2_i = select i1 %tmp_11_2_2_i, i8 %tmp_22, i8 %valInWindow_0_maxVal_1_2_1_i
+
+ST_15: sel_tmp [1/1] 1.37ns (out node of the LUT)
+.preheader.preheader.i.i_ifconv:152  %sel_tmp = select i1 %sel_tmp3, i8 %valInWindow_0_maxVal_1_2_2_i, i8 0
+
+ST_15: sel_tmp10 [1/1] 1.37ns (out node of the LUT)
+.preheader.preheader.i.i_ifconv:153  %sel_tmp10 = select i1 %sel_tmp6, i8 %valInWindow_0_minVal_1_2_2_i, i8 %sel_tmp
+
+
+ <State 16>: 6.66ns
+ST_16: empty_9 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:0  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 262144, i64 262144, i64 262144)
+
+ST_16: stg_244 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1806) nounwind
+
+ST_16: tmp_18_tr [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:91  %tmp_18_tr = sext i16 %valOutput to i17
+
+ST_16: p_neg [1/1] 1.96ns
+.preheader.preheader.i.i_ifconv:93  %p_neg = sub i17 0, %tmp_18_tr
+
+ST_16: tmp_8 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:94  %tmp_8 = call i14 @_ssdm_op_PartSelect.i14.i17.i32.i32(i17 %p_neg, i32 3, i32 16)
+
+ST_16: tmp_7_cast [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:95  %tmp_7_cast = zext i14 %tmp_8 to i15
+
+ST_16: tmp_1 [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:97  %tmp_1 = sext i13 %tmp_9 to i14
+
+ST_16: tmp_2 [1/1] 1.96ns
+.preheader.preheader.i.i_ifconv:98  %tmp_2 = sub i15 0, %tmp_7_cast
+
+ST_16: tmp_10_cast [1/1] 0.00ns
+.preheader.preheader.i.i_ifconv:99  %tmp_10_cast = zext i14 %tmp_1 to i15
+
+ST_16: valOutput_1 [1/1] 1.37ns
+.preheader.preheader.i.i_ifconv:100  %valOutput_1 = select i1 %tmp_6, i15 %tmp_2, i15 %tmp_10_cast
+
+ST_16: tmp_10 [1/1] 0.00ns (grouped into LUT with out node tmp_data_V)
+.preheader.preheader.i.i_ifconv:101  %tmp_10 = trunc i15 %valOutput_1 to i8
+
+ST_16: tmp_13 [1/1] 0.00ns (grouped into LUT with out node tmp_data_V)
+.preheader.preheader.i.i_ifconv:102  %tmp_13 = call i1 @_ssdm_op_BitSelect.i1.i15.i32(i15 %valOutput_1, i32 14)
+
+ST_16: p_s [1/1] 0.00ns (grouped into LUT with out node tmp_data_V)
+.preheader.preheader.i.i_ifconv:103  %p_s = select i1 %tmp_13, i8 0, i8 %tmp_10
+
+ST_16: tmp_data_V [1/1] 1.37ns (out node of the LUT)
+.preheader.preheader.i.i_ifconv:154  %tmp_data_V = select i1 %sel_tmp9, i8 %p_s, i8 %sel_tmp10
+
+ST_16: stg_257 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i2P.i1P.i5P.i6P(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i8 %tmp_data_V, i1 %tmp_keep_V_1, i1 %tmp_strb_V_1, i2 %tmp_user_V_1, i1 false, i5 %tmp_id_V_1, i6 %tmp_dest_V_1)
+
+ST_16: stg_258 [1/1] 0.00ns
+:1  br label %._crit_edge75
+
+
+ <State 17>: 2.07ns
+ST_17: countWait_1 [1/1] 0.00ns
+.preheader:0  %countWait_1 = phi i10 [ %countWait_2, %3 ], [ 0, %1 ]
+
+ST_17: exitcond [1/1] 2.07ns
+.preheader:1  %exitcond = icmp eq i10 %countWait_1, -511
+
+ST_17: empty_12 [1/1] 0.00ns
+.preheader:2  %empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 513, i64 513, i64 513)
+
+ST_17: countWait_2 [1/1] 1.84ns
+.preheader:3  %countWait_2 = add i10 %countWait_1, 1
+
+ST_17: stg_263 [1/1] 0.00ns
+.preheader:4  br i1 %exitcond, label %4, label %3
+
+ST_17: tmp_last_V [1/1] 0.00ns
+:0  %tmp_last_V = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %countWait_1, i32 9)
+
+ST_17: stg_265 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i2P.i1P.i5P.i6P(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i8 0, i1 %tmp_keep_V, i1 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)
+
+ST_17: stg_266 [1/1] 0.00ns
+:2  br label %.preheader
+
+ST_17: stg_267 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

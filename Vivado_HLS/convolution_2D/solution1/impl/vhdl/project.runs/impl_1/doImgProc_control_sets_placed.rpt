@@ -1,0 +1,112 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Tue Jun 21 16:44:58 2016
+| Host         : darkin-UX303LN running 64-bit elementary OS Freya
+| Command      : report_control_sets -verbose -file doImgProc_control_sets_placed.rpt
+| Design       : doImgProc
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    59 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              30 |           15 |
+| Yes          | No                    | No                     |             690 |          206 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             178 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                Enable Signal                               |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  ap_clk      | doImgProc_CRTL_BUS_s_axi_U/ar_hs                                           |                                                           |                2 |              5 |
+|  ap_clk      | doImgProc_CRTL_BUS_s_axi_U/waddr                                           |                                                           |                1 |              5 |
+|  ap_clk      | valInWindow_0_maxVal_1_2_i_reg_16490                                       |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_maxVal_1_2_1_i_reg_16790                                     |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_0_2_i_reg_15350                                     |                                                           |                3 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_1_1_i_reg_15850                                     |                                                           |                1 |              8 |
+|  ap_clk      | tmp_15_reg_1509[7]_i_1_n_0                                                 |                                                           |                3 |              8 |
+|  ap_clk      | sel_tmp10_reg_1700[7]_i_2_n_0                                              | sel_tmp10_reg_1700                                        |                2 |              8 |
+|  ap_clk      | tmp_16_reg_15220                                                           |                                                           |                3 |              8 |
+|  ap_clk      | reg_5400                                                                   |                                                           |                1 |              8 |
+|  ap_clk      | reg_535                                                                    |                                                           |                3 |              8 |
+|  ap_clk      | reg_5310                                                                   |                                                           |                1 |              8 |
+|  ap_clk      | reg_5270                                                                   |                                                           |                3 |              8 |
+|  ap_clk      | tmp_17_reg_15410                                                           |                                                           |                3 |              8 |
+|  ap_clk      | tmp_14_reg_14960                                                           |                                                           |                3 |              8 |
+|  ap_clk      | tmp_18_reg_15660                                                           |                                                           |                4 |              8 |
+|  ap_clk      | tmp_19_reg_1591[7]_i_1_n_0                                                 |                                                           |                3 |              8 |
+|  ap_clk      | tmp_21_reg_1641[7]_i_1_n_0                                                 |                                                           |                3 |              8 |
+|  ap_clk      | tmp_20_reg_16160                                                           |                                                           |                3 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_1_2_i_reg_16100                                     |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_1_i_reg_15600                                       |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_2_i_reg_16350                                       |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_minVal_1_2_1_i_reg_1665[7]_i_1_n_0                           |                                                           |                1 |              8 |
+|  ap_clk      | tmp_22_reg_16710                                                           |                                                           |                4 |              8 |
+|  ap_clk      | valInWindow_0_maxVal_1_0_2_i_reg_15490                                     |                                                           |                4 |              8 |
+|  ap_clk      | valInWindow_0_maxVal_1_1_1_i_reg_15990                                     |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_maxVal_1_1_2_i_reg_16240                                     |                                                           |                1 |              8 |
+|  ap_clk      | valInWindow_0_maxVal_1_1_i_reg_15740                                       |                                                           |                1 |              8 |
+|  ap_clk      | pixConvolved_reg_4930                                                      | doImgProc_CRTL_BUS_s_axi_U/pixConvolved_reg_493_reg[0][0] |                2 |              9 |
+|  ap_clk      | pixConvolved_2_reg_14360                                                   | pixConvolved_2_reg_1436[8]_i_1_n_0                        |                4 |              9 |
+|  ap_clk      | countWait_1_reg_516[9]_i_2_n_0                                             | countWait_1_reg_5160                                      |                2 |             10 |
+|  ap_clk      | col_assign_1_0_2_reg_13960                                                 |                                                           |                6 |             12 |
+|  ap_clk      | lineBuff_val_1_addr_reg_13140                                              |                                                           |                9 |             12 |
+|  ap_clk      | tmp_dest_V_reg_4580                                                        |                                                           |                4 |             15 |
+|  ap_clk      | lineBuff_val_2_U/doImgProc_lineBuff_val_0_ram_U/WEA[0]                     |                                                           |                2 |             15 |
+|  ap_clk      | doImgProc_KERNEL_BUS_s_axi_U/ap_reg_ppstg_tmp_dest_V_1_reg_1380_pp0_iter10 |                                                           |                2 |             15 |
+|  ap_clk      | tmp_6_reg_16900                                                            |                                                           |                4 |             16 |
+|  ap_clk      | window_val_2_0_reg_16050                                                   |                                                           |                7 |             16 |
+|  ap_clk      | tmp4_reg_15040                                                             |                                                           |                4 |             16 |
+|  ap_clk      | tmp3_reg_1660[15]_i_1_n_0                                                  |                                                           |                4 |             16 |
+|  ap_clk      | ap_reg_ppiten_pp0_it10                                                     |                                                           |                6 |             16 |
+|  ap_clk      | tmp1_reg_16300                                                             |                                                           |                4 |             16 |
+|  ap_clk      | p_24_in                                                                    |                                                           |                4 |             16 |
+|  ap_clk      | p_26_in                                                                    |                                                           |                4 |             16 |
+|  ap_clk      | p_27_in                                                                    |                                                           |                5 |             16 |
+|  ap_clk      | p_29_in                                                                    |                                                           |                6 |             16 |
+|  ap_clk      | p_32_in                                                                    |                                                           |                7 |             16 |
+|  ap_clk      | lineBuff_val_1_load_3_reg_14860                                            |                                                           |                9 |             16 |
+|  ap_clk      |                                                                            |                                                           |                9 |             17 |
+|  ap_clk      | doImgProc_CRTL_BUS_s_axi_U/ar_hs                                           | doImgProc_CRTL_BUS_s_axi_U/rdata_data[31]_i_1_n_0         |                7 |             27 |
+|  ap_clk      |                                                                            | doImgProc_CRTL_BUS_s_axi_U/ARESET                         |               15 |             30 |
+|  ap_clk      | phitmp_reg_1351[0]_i_1_n_0                                                 | idxCol_1_reg_1337                                         |                8 |             32 |
+|  ap_clk      | reg_540_reg[7]_i_6_n_0                                                     |                                                           |                8 |             32 |
+|  ap_clk      | doImgProc_CRTL_BUS_s_axi_U/p_0_in11_out                                    |                                                           |                7 |             32 |
+|  ap_clk      | doImgProc_KERNEL_BUS_s_axi_U/rdata_data[31]_i_1__0_n_0                     |                                                           |                6 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_3_n_0                                                 |                                                           |                6 |             32 |
+|  ap_clk      | A[7]__0_i_1_n_0                                                            |                                                           |               22 |             40 |
+|  ap_clk      | phitmp_reg_1351[0]_i_1_n_0                                                 |                                                           |               13 |             51 |
+|  ap_clk      | lineBuff_val_2_U/doImgProc_lineBuff_val_0_ram_U/idxRow_reg_482_reg[0]      | doImgProc_CRTL_BUS_s_axi_U/SR[0]                          |               22 |             83 |
++--------------+----------------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+
+

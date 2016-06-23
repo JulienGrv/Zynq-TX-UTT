@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 17:18:21 MST 2014
+# 
+# Start of session at: Sun Oct 04 00:13:34 2015
+# Process ID: 6620
+# Log file: E:/ZynqTestLab10/ZynqTestLab10.sdk/webtalk/webtalk.log
+# Journal file: E:/ZynqTestLab10/ZynqTestLab10.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Jun 20 18:12:44 2016
+# Process ID: 6358
+# Current directory: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/doHist/xsim_script.tcl}
+# Log file: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/sim/vhdl/xsim.log
+# Journal file: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/doHist/xsim_script.tcl
+# xsim {doHist} -autoloadwcfg -tclbatch {doHist.tcl}
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source doHist.tcl
+## run all
+Note: simulation done!
+Time: 1538975 ns  Iteration: 1  Process: /apatb_doHist_top/generate_sim_done_proc  File: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/sim/vhdl/doHist.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 1538975 ns  Iteration: 1  Process: /apatb_doHist_top/generate_sim_done_proc  File: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/sim/vhdl/doHist.autotb.vhd
+$finish called at time : 1538975 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jun 20 18:12:50 2016...

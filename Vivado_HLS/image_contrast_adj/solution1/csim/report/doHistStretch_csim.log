@@ -1,0 +1,6 @@
+   Compiling ../../../src/test_core.cpp in debug mode
+   Compiling ../../../src/core.cpp in debug mode
+   Generating csim.exe
+Load image /home/darkin/Workspace/Vivado_HLS/img/lena_std_low_contrast.tif
+Image Rows:512 Cols:512
+INFO: [SIM 1] CSim done with 0 errors.

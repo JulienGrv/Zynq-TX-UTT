@@ -1,0 +1,8 @@
+02:50:33 **** Incremental Build of configuration Release for project testImgProc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+
+02:50:33 Build Finished (took 146ms)
+

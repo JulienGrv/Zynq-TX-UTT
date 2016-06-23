@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Jun 20 20:43:42 2016
+# Process ID: 21089
+# Current directory: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/impl/vhdl/project.runs/synth_1
+# Command line: vivado -log doHist.vds -mode batch -messageDb vivado.pb -notrace -source doHist.tcl
+# Log file: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/impl/vhdl/project.runs/synth_1/doHist.vds
+# Journal file: /home/darkin/Workspace/Vivado_HLS/image_histogram/solution1/impl/vhdl/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source doHist.tcl -notrace

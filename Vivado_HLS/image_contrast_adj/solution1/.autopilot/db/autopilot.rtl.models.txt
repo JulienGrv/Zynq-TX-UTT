@@ -1,0 +1,5 @@
+doHistStretch_fmul_32ns_32ns_32_4_max_dsp
+doHistStretch_fdiv_32ns_32ns_32_16
+doHistStretch_sitofp_32s_32_6
+doHistStretch_CTRL_BUS_s_axi
+doHistStretch

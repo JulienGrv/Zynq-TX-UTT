@@ -1,0 +1,60 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Mon Jun 20 20:45:13 2016
+| Host         : darkin-UX303LN running 64-bit elementary OS Freya
+| Command      : report_control_sets -verbose -file doHist_control_sets_placed.rpt
+| Design       : doHist
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              16 |            4 |
+| Yes          | No                    | No                     |              36 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              28 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------+---------------------------------------------------+------------------+----------------+
+| Clock Signal |         Enable Signal         |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++--------------+-------------------------------+---------------------------------------------------+------------------+----------------+
+|  ap_clk      | doHist_CTRL_BUS_s_axi_U/waddr |                                                   |                2 |              4 |
+|  ap_clk      | doHist_CTRL_BUS_s_axi_U/ar_hs |                                                   |                2 |              5 |
+|  ap_clk      | inStream_TREADY               |                                                   |                4 |              8 |
+|  ap_clk      | idxHist_reg_1090              | doHist_CTRL_BUS_s_axi_U/idxHist_reg_109_reg[0][0] |                2 |              9 |
+|  ap_clk      |                               | doHist_CTRL_BUS_s_axi_U/SR[0]                     |                4 |             16 |
+|  ap_clk      | ap_sig_130                    | idxPixel_reg_1200                                 |                4 |             19 |
+|  ap_clk      | ap_done15_out                 |                                                   |                6 |             19 |
++--------------+-------------------------------+---------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="core.cpp" path="/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/src/core.cpp"/>
+    <originFiles name="core.h" path="/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/src/core.h"/>
+    <originFiles name="define.h" path="/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/src/define.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_core.cpp" path="/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/src/test_core.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

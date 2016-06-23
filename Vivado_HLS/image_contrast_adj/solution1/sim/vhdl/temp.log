@@ -1,0 +1,503 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_doHistStretch_top -prj doHistStretch.prj --lib ieee_proposed=./ieee_proposed -s doHistStretch 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_utils_v3_0_6/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/axi_utils_v2_0_2/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_dsp48_wrapper_v3_0_4/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_dsp48_addsub_v3_0_2/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_dsp48_addsub_v3_0_2/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_dsp48_multadd_v3_0_2/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_dsp48_multadd_v3_0_2/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_bram18k_v3_0_2/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xbip_bram18k_v3_0_2/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/mult_gen_v12_0_11/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/mult_gen_v12_0_11/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd" into library floating_point_v7_1_2
+INFO: [VRFC 10-307] analyzing entity fdgS
+INFO: [VRFC 10-307] analyzing entity fdgW
+INFO: [VRFC 10-307] analyzing entity lutV
+INFO: [VRFC 10-307] analyzing entity lutS
+INFO: [VRFC 10-307] analyzing entity lutN
+INFO: [VRFC 10-307] analyzing entity lutNMuxS
+INFO: [VRFC 10-307] analyzing entity srl16eS
+INFO: [VRFC 10-307] analyzing entity delayS
+INFO: [VRFC 10-307] analyzing entity andW
+INFO: [VRFC 10-307] analyzing entity orW
+INFO: [VRFC 10-307] analyzing entity srl16ew
+INFO: [VRFC 10-307] analyzing entity delayW
+INFO: [VRFC 10-307] analyzing entity compW
+INFO: [VRFC 10-307] analyzing entity addSubW
+INFO: [VRFC 10-307] analyzing entity equalW
+INFO: [VRFC 10-307] analyzing entity addW
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity cntrlgen
+INFO: [VRFC 10-307] analyzing entity cntrlgen2
+INFO: [VRFC 10-307] analyzing entity ppGenR8
+INFO: [VRFC 10-307] analyzing entity ppGenR8Msb2
+INFO: [VRFC 10-307] analyzing entity addSubShGW
+INFO: [VRFC 10-307] analyzing entity addSubShFW
+INFO: [VRFC 10-307] analyzing entity vmRoundW
+INFO: [VRFC 10-307] analyzing entity vmsMultCore
+INFO: [VRFC 10-307] analyzing entity wideEmbedMult4
+INFO: [VRFC 10-307] analyzing entity wideEmbedMult16
+INFO: [VRFC 10-307] analyzing entity wideEmbedMult
+INFO: [VRFC 10-307] analyzing entity dsp48MultALine
+INFO: [VRFC 10-307] analyzing entity dsp48Mult
+INFO: [VRFC 10-307] analyzing entity xMult
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity delay_s
+INFO: [VRFC 10-307] analyzing entity mux_bus2
+INFO: [VRFC 10-307] analyzing entity twos_comp
+INFO: [VRFC 10-307] analyzing entity carry_chain
+INFO: [VRFC 10-307] analyzing entity mux4
+INFO: [VRFC 10-307] analyzing entity compare_gt
+INFO: [VRFC 10-307] analyzing entity compare_eq_im
+INFO: [VRFC 10-307] analyzing entity compare_ne_im
+INFO: [VRFC 10-307] analyzing entity compare_eq
+INFO: [VRFC 10-307] analyzing entity compare
+INFO: [VRFC 10-307] analyzing entity special_detect
+INFO: [VRFC 10-307] analyzing entity norm_zero_det
+INFO: [VRFC 10-307] analyzing entity zero_det_sel
+INFO: [VRFC 10-307] analyzing entity shift_msb_first
+INFO: [VRFC 10-307] analyzing entity flt_dec_op
+INFO: [VRFC 10-307] analyzing entity flt_dec_op_lat
+INFO: [VRFC 10-307] analyzing entity lead_zero_encode
+INFO: [VRFC 10-307] analyzing entity lead_zero_encode_shift
+INFO: [VRFC 10-307] analyzing entity dsp48e1_wrapper
+INFO: [VRFC 10-307] analyzing entity dsp48e2_wrapper
+INFO: [VRFC 10-307] analyzing entity addsub_logic
+INFO: [VRFC 10-307] analyzing entity addsub_dsp
+INFO: [VRFC 10-307] analyzing entity addsub
+INFO: [VRFC 10-307] analyzing entity flt_round_bit
+INFO: [VRFC 10-307] analyzing entity renorm_and_round_logic
+INFO: [VRFC 10-307] analyzing entity norm_and_round_dsp48e1_sgl
+INFO: [VRFC 10-307] analyzing entity norm_and_round_logic
+INFO: [VRFC 10-307] analyzing entity alignment
+INFO: [VRFC 10-307] analyzing entity normalize
+INFO: [VRFC 10-307] analyzing entity align_add_dsp48e1_sgl
+INFO: [VRFC 10-307] analyzing entity align_add
+INFO: [VRFC 10-307] analyzing entity multadd
+INFO: [VRFC 10-307] analyzing entity compare_ge
+INFO: [VRFC 10-307] analyzing entity flt_mant_lookup_hp
+INFO: [VRFC 10-307] analyzing entity fix_to_flt_conv_exp
+INFO: [VRFC 10-307] analyzing entity fix_to_flt_conv
+INFO: [VRFC 10-307] analyzing entity flt_to_fix_conv
+INFO: [VRFC 10-307] analyzing entity flt_to_flt_conv_exp
+INFO: [VRFC 10-307] analyzing entity flt_to_flt_conv
+INFO: [VRFC 10-307] analyzing entity fp_cmp
+INFO: [VRFC 10-307] analyzing entity flt_sqrt_mant_addsub
+INFO: [VRFC 10-307] analyzing entity flt_sqrt_mant
+INFO: [VRFC 10-307] analyzing entity flt_sqrt_exp
+INFO: [VRFC 10-307] analyzing entity flt_sqrt
+INFO: [VRFC 10-307] analyzing entity flt_div_mant_addsub
+INFO: [VRFC 10-307] analyzing entity flt_div_mant
+INFO: [VRFC 10-307] analyzing entity flt_div_exp
+INFO: [VRFC 10-307] analyzing entity flt_div
+INFO: [VRFC 10-307] analyzing entity fix_mult_dsp48e1_lat_dbl
+INFO: [VRFC 10-307] analyzing entity fix_mult_dsp48e1_sgl
+INFO: [VRFC 10-307] analyzing entity fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-307] analyzing entity fix_mult_dsp48e2_dbl
+INFO: [VRFC 10-307] analyzing entity fix_mult_qq
+INFO: [VRFC 10-307] analyzing entity fix_mult_xx
+INFO: [VRFC 10-307] analyzing entity fix_mult
+INFO: [VRFC 10-307] analyzing entity flt_round_dsp_opt_full
+INFO: [VRFC 10-307] analyzing entity flt_round_dsp_opt_part
+INFO: [VRFC 10-307] analyzing entity flt_mult_round
+INFO: [VRFC 10-307] analyzing entity flt_mult_exp
+INFO: [VRFC 10-307] analyzing entity flt_mult
+INFO: [VRFC 10-307] analyzing entity flt_add_exp
+INFO: [VRFC 10-307] analyzing entity flt_add_logic
+INFO: [VRFC 10-307] analyzing entity flt_add_lat_align_add
+INFO: [VRFC 10-307] analyzing entity flt_add_lat_norm
+INFO: [VRFC 10-307] analyzing entity flt_add_lat_exp
+INFO: [VRFC 10-307] analyzing entity flt_add_lat
+INFO: [VRFC 10-307] analyzing entity align_add_dsp48e1_hp
+INFO: [VRFC 10-307] analyzing entity lead_zero_encode_shift_hp
+INFO: [VRFC 10-307] analyzing entity norm_and_round_dsp48e1_hp
+INFO: [VRFC 10-307] analyzing entity flt_add_exp_hp
+INFO: [VRFC 10-307] analyzing entity flt_add_exp_sp
+INFO: [VRFC 10-307] analyzing entity flt_add_dsp
+INFO: [VRFC 10-307] analyzing entity flt_add
+INFO: [VRFC 10-307] analyzing entity flt_recip_approx
+INFO: [VRFC 10-307] analyzing entity flt_recip_nr
+INFO: [VRFC 10-307] analyzing entity flt_recip_reduction_calc
+INFO: [VRFC 10-307] analyzing entity flt_recip_eval
+INFO: [VRFC 10-307] analyzing entity flt_recip_postprocess
+INFO: [VRFC 10-307] analyzing entity flt_recip_specialcase
+INFO: [VRFC 10-307] analyzing entity flt_recip_recomb
+INFO: [VRFC 10-307] analyzing entity flt_recipsqrt_dp_m_calc
+INFO: [VRFC 10-307] analyzing entity flt_recip
+INFO: [VRFC 10-307] analyzing entity flt_log_addsub
+INFO: [VRFC 10-307] analyzing entity flt_log_addsub_taylor_fabric
+INFO: [VRFC 10-307] analyzing entity flt_log_addsub_taylor_combiner_fabric
+INFO: [VRFC 10-307] analyzing entity flt_log_single_one_detect
+INFO: [VRFC 10-307] analyzing entity flt_log_inproc
+INFO: [VRFC 10-307] analyzing entity flt_log_exp
+INFO: [VRFC 10-307] analyzing entity flt_log_L_block_memory
+INFO: [VRFC 10-307] analyzing entity flt_pt_log_L_block
+INFO: [VRFC 10-307] analyzing entity flt_log_rr_mul_iter
+INFO: [VRFC 10-307] analyzing entity flt_log_rr_mul
+INFO: [VRFC 10-307] analyzing entity flt_log_rr
+INFO: [VRFC 10-307] analyzing entity flt_log_taylor
+INFO: [VRFC 10-307] analyzing entity flt_log_shift_msb_first
+INFO: [VRFC 10-307] analyzing entity flt_log_lead_zero_encode
+INFO: [VRFC 10-307] analyzing entity flt_log_normalize
+INFO: [VRFC 10-307] analyzing entity flt_log_norm
+INFO: [VRFC 10-307] analyzing entity flt_log_rnd
+INFO: [VRFC 10-307] analyzing entity flt_log_specialcase
+INFO: [VRFC 10-307] analyzing entity flt_log_recomb
+INFO: [VRFC 10-307] analyzing entity flt_log
+INFO: [VRFC 10-307] analyzing entity flt_exp_specialcase
+INFO: [VRFC 10-307] analyzing entity flt_exp_recomb
+INFO: [VRFC 10-307] analyzing entity flt_exp_ccm
+INFO: [VRFC 10-307] analyzing entity flt_exp_e2A
+INFO: [VRFC 10-307] analyzing entity flt_exp_dp_poly
+INFO: [VRFC 10-307] analyzing entity flt_exp_e2zmzm1
+INFO: [VRFC 10-307] analyzing entity flt_exp_hp
+INFO: [VRFC 10-307] analyzing entity flt_exp
+INFO: [VRFC 10-307] analyzing entity flt_fma_specialcase
+INFO: [VRFC 10-307] analyzing entity flt_fma_round_bit
+INFO: [VRFC 10-307] analyzing entity flt_fma_renorm_and_round_logic
+INFO: [VRFC 10-307] analyzing entity flt_fma_special_detect
+INFO: [VRFC 10-307] analyzing entity flt_fma_add_exp
+INFO: [VRFC 10-307] analyzing entity flt_fma_alignment
+INFO: [VRFC 10-307] analyzing entity flt_fma_addsub_dsp1
+INFO: [VRFC 10-307] analyzing entity flt_fma_addsub_dsp2
+INFO: [VRFC 10-307] analyzing entity flt_fma_addsub
+INFO: [VRFC 10-307] analyzing entity flt_fma_align_add
+INFO: [VRFC 10-307] analyzing entity flt_fma_norm_logic
+INFO: [VRFC 10-307] analyzing entity flt_fma_add_logic
+INFO: [VRFC 10-307] analyzing entity flt_fma_add
+INFO: [VRFC 10-307] analyzing entity flt_fma_mul
+INFO: [VRFC 10-307] analyzing entity flt_fma
+INFO: [VRFC 10-307] analyzing entity flt_accum_flt_to_fix
+INFO: [VRFC 10-307] analyzing entity flt_accum_bit_encode
+INFO: [VRFC 10-307] analyzing entity flt_accum
+INFO: [VRFC 10-307] analyzing entity floating_point_v7_1_2_viv
+INFO: [VRFC 10-307] analyzing entity floating_point_v7_1_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xil_defaultlib/doHistStretch_ap_fdiv_14_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_ap_fdiv_14_no_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xil_defaultlib/doHistStretch_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_ap_fmul_2_max_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/ip/xil_defaultlib/doHistStretch_ap_sitofp_4_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_ap_sitofp_4_no_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/AESL_axi_slave_CTRL_BUS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch_fmul_32ns_32ns_32_4_max_dsp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_fmul_32ns_32ns_32_4_max_dsp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch_CTRL_BUS_s_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_CTRL_BUS_s_axi
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch_sitofp_32s_32_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_sitofp_32s_32_6
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity apatb_doHistStretch_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch_fdiv_32ns_32ns_32_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch_fdiv_32ns_32ns_32_16
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/AESL_axi_s_outStream.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_outStream
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/doHistStretch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity doHistStretch
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/AESL_axi_s_inStream.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_inStream
+Starting static elaboration
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/mult_gen_v12_0_11/mult_gen_v12_0_vh_rfs.vhd:2255]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/mult_gen_v12_0_11/mult_gen_v12_0_vh_rfs.vhd:2240]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:90362]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:13629]
+WARNING: [VRFC 10-982] library name floating_point_v7_1_2 of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/doHistStretch_ap_fmul_2_max_dsp_32.vhd:189]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:90362]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:13629]
+WARNING: [VRFC 10-982] library name floating_point_v7_1_2 of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/doHistStretch_ap_fdiv_14_no_dsp_32.vhd:189]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:90362]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/xbip_pipe_v3_0_2/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:30530]
+WARNING: [VRFC 10-1303] range is empty (null range) [ip/floating_point_v7_1_2/floating_point_v7_1_vh_rfs.vhd:13629]
+WARNING: [VRFC 10-982] library name floating_point_v7_1_2 of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/doHistStretch_ap_sitofp_4_no_dsp_32.vhd:185]
+WARNING: [VRFC 10-1303] range is empty (null range) [/proj/xhdhdstaff2/tapodyu/XsimWork/data/vhdl/src/ieee/distributable/numeric_std.vhd:3462]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package floating_point_v7_1_2.floating_point_v7_1_2_viv_comp
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package floating_point_v7_1_2.floating_point_v7_1_2_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_2.floating_point_v7_1_2_exp_table_...
+Compiling package mult_gen_v12_0_11.mult_gen_v12_0_11_pkg
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_2.floating_point_v7_1_2_pkg
+Compiling package floating_point_v7_1_2.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_2.vt2mutils
+Compiling package floating_point_v7_1_2.vt2mcomps
+Compiling architecture behave of entity xil_defaultlib.doHistStretch_CTRL_BUS_s_axi [dohiststretch_ctrl_bus_s_axi_def...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=24,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=17,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=25,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_2.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=48,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_2.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_2.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=32,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_2.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_2.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_2.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=18,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_2.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_2.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_2.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_2.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2_viv [\floating_point_v7_1_2_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2 [\floating_point_v7_1_2(c_xdevice...]
+Compiling architecture dohiststretch_ap_fmul_2_max_dsp_32_arch of entity xil_defaultlib.doHistStretch_ap_fmul_2_max_dsp_32 [dohiststretch_ap_fmul_2_max_dsp_...]
+Compiling architecture arch of entity xil_defaultlib.doHistStretch_fmul_32ns_32ns_32_4_max_dsp [dohiststretch_fmul_32ns_32ns_32_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_2.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=26,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=23)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_2.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=26)\]
+Compiling architecture virtex of entity floating_point_v7_1_2.flt_div_mant [\flt_div_mant(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=10,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_2.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(length=13,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=8,length=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(length=12,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=3,length=12,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=4,length=12,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_2.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_2.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_2.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_2.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_2.flt_div [\flt_div(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2_viv [\floating_point_v7_1_2_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2 [\floating_point_v7_1_2(c_xdevice...]
+Compiling architecture dohiststretch_ap_fdiv_14_no_dsp_32_arch of entity xil_defaultlib.doHistStretch_ap_fdiv_14_no_dsp_32 [dohiststretch_ap_fdiv_14_no_dsp_...]
+Compiling architecture arch of entity xil_defaultlib.doHistStretch_fdiv_32ns_32ns_32_16 [\doHistStretch_fdiv_32ns_32ns_32...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=31,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=32)\]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=4)\]
+Compiling architecture rtl of entity floating_point_v7_1_2.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture rtl of entity floating_point_v7_1_2.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_2.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_2.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_2.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(width=12,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_2.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_2.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_2.delay [\delay(length=3)\]
+Compiling architecture synth of entity floating_point_v7_1_2.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_2.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_2.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2_viv [\floating_point_v7_1_2_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_2.floating_point_v7_1_2 [\floating_point_v7_1_2(c_xdevice...]
+Compiling architecture dohiststretch_ap_sitofp_4_no_dsp_32_arch of entity xil_defaultlib.doHistStretch_ap_sitofp_4_no_dsp_32 [dohiststretch_ap_sitofp_4_no_dsp...]
+Compiling architecture arch of entity xil_defaultlib.doHistStretch_sitofp_32s_32_6 [\doHistStretch_sitofp_32s_32_6(i...]
+Compiling architecture behav of entity xil_defaultlib.doHistStretch [dohiststretch_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_inStream [aesl_axi_s_instream_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_outStream [aesl_axi_s_outstream_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_CTRL_BUS [aesl_axi_slave_ctrl_bus_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_dohiststretch_top
+Built simulation snapshot doHistStretch
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/xsim.dir/doHistStretch/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 19:32:10 2016...
+
+****** xsim v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/doHistStretch/xsim_script.tcl
+# xsim {doHistStretch} -autoloadwcfg -tclbatch {doHistStretch.tcl}
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source doHistStretch.tcl
+## run all
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0

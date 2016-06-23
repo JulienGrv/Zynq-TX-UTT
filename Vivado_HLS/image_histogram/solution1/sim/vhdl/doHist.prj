@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+vhdl xil_defaultlib "AESL_axi_slave_CTRL_BUS.vhd"
+vhdl xil_defaultlib "AESL_autobram_histo.vhd"
+vhdl xil_defaultlib "doHist.autotb.vhd"
+vhdl xil_defaultlib "doHist.vhd"
+vhdl xil_defaultlib "doHist_CTRL_BUS_s_axi.vhd"
+vhdl xil_defaultlib "AESL_axi_s_inStream.vhd"
+

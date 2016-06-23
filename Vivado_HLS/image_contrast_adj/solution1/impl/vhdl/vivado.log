@@ -1,0 +1,1252 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 21 00:26:33 2016
+# Process ID: 23577
+# Current directory: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl
+# Command line: vivado -notrace -mode batch -source run_vivado.tcl
+# Log file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/vivado.log
+# Journal file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doHistStretch_ap_fdiv_14_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doHistStretch_ap_fdiv_14_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doHistStretch_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doHistStretch_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doHistStretch_ap_sitofp_4_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doHistStretch_ap_sitofp_4_no_dsp_32'...
+[Tue Jun 21 00:26:47 2016] Launched synth_1...
+Run output will be captured here: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/synth_1/runme.log
+[Tue Jun 21 00:26:47 2016] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log doHistStretch.vds -m64 -mode batch -messageDb vivado.pb -notrace -source doHistStretch.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source doHistStretch.tcl -notrace
+Command: synth_design -top doHistStretch -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24055 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1066.059 ; gain = 159.078 ; free physical = 135 ; free virtual = 10373
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'doHistStretch' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:58]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:94]
+INFO: [Synth 8-3491] module 'doHistStretch_CTRL_BUS_s_axi' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_CTRL_BUS_s_axi.vhd:12' bound to instance 'doHistStretch_CTRL_BUS_s_axi_U' of component 'doHistStretch_CTRL_BUS_s_axi' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:455]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_CTRL_BUS_s_axi' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_CTRL_BUS_s_axi.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_CTRL_BUS_s_axi' (1#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_CTRL_BUS_s_axi.vhd:78]
+INFO: [Synth 8-3491] module 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fmul_32ns_32ns_32_4_max_dsp.vhd:11' bound to instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1' of component 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:488]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fmul_32ns_32ns_32_4_max_dsp.vhd:29]
+INFO: [Synth 8-3491] module 'doHistStretch_ap_fmul_2_max_dsp_32' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fmul_2_max_dsp_32/synth/doHistStretch_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'doHistStretch_ap_fmul_2_max_dsp_32_u' of component 'doHistStretch_ap_fmul_2_max_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fmul_32ns_32ns_32_4_max_dsp.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_ap_fmul_2_max_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fmul_2_max_dsp_32/synth/doHistStretch_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_2' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/floating_point_v7_1_2/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_2' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fmul_2_max_dsp_32/synth/doHistStretch_ap_fmul_2_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_ap_fmul_2_max_dsp_32' (17#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fmul_2_max_dsp_32/synth/doHistStretch_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp' (18#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fmul_32ns_32ns_32_4_max_dsp.vhd:29]
+INFO: [Synth 8-3491] module 'doHistStretch_fdiv_32ns_32ns_32_16' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fdiv_32ns_32ns_32_16.vhd:11' bound to instance 'doHistStretch_fdiv_32ns_32ns_32_16_U2' of component 'doHistStretch_fdiv_32ns_32ns_32_16' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:503]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_fdiv_32ns_32ns_32_16' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fdiv_32ns_32ns_32_16.vhd:29]
+INFO: [Synth 8-3491] module 'doHistStretch_ap_fdiv_14_no_dsp_32' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/synth/doHistStretch_ap_fdiv_14_no_dsp_32.vhd:59' bound to instance 'doHistStretch_ap_fdiv_14_no_dsp_32_u' of component 'doHistStretch_ap_fdiv_14_no_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fdiv_32ns_32ns_32_16.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_ap_fdiv_14_no_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/synth/doHistStretch_ap_fdiv_14_no_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_2' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/floating_point_v7_1_2/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_2' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/synth/doHistStretch_ap_fdiv_14_no_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_ap_fdiv_14_no_dsp_32' (25#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/synth/doHistStretch_ap_fdiv_14_no_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_fdiv_32ns_32ns_32_16' (26#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_fdiv_32ns_32ns_32_16.vhd:29]
+INFO: [Synth 8-3491] module 'doHistStretch_sitofp_32s_32_6' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_sitofp_32s_32_6.vhd:11' bound to instance 'doHistStretch_sitofp_32s_32_6_U3' of component 'doHistStretch_sitofp_32s_32_6' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:518]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_sitofp_32s_32_6' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_sitofp_32s_32_6.vhd:27]
+INFO: [Synth 8-3491] module 'doHistStretch_ap_sitofp_4_no_dsp_32' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_sitofp_4_no_dsp_32/synth/doHistStretch_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'doHistStretch_ap_sitofp_4_no_dsp_32_u' of component 'doHistStretch_ap_sitofp_4_no_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_sitofp_32s_32_6.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'doHistStretch_ap_sitofp_4_no_dsp_32' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_sitofp_4_no_dsp_32/synth/doHistStretch_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_2' declared at '/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_fdiv_14_no_dsp_32/floating_point_v7_1_2/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_2' [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_sitofp_4_no_dsp_32/synth/doHistStretch_ap_sitofp_4_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_ap_sitofp_4_no_dsp_32' (34#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.srcs/sources_1/ip/doHistStretch_ap_sitofp_4_no_dsp_32/synth/doHistStretch_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch_sitofp_32s_32_6' (35#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch_sitofp_32s_32_6.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'doHistStretch' (36#1) [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.vhd:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized521 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized521 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized521 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized519 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized519 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized519 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized517 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized517 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized517 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized517 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized517 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized515 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized515 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized515 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized515 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized515 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized513 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized513 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized513 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DATA[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[5]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized459 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized459 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized459 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized459 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized459 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized457 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized457 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized457 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized457 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized457 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized461 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized461 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized461 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized19 has unconnected port B[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized577 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized577 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized577 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized571 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized571 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized571 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized575 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized575 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized575 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized575 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized575 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized573 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized573 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized573 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized569 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized569 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized569 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized569 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized569 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized23 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized567 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized567 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized567 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized567 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized567 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized557 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_2_viv__parameterized557 has unconnected port CE
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1181.504 ; gain = 274.523 ; free physical = 126 ; free virtual = 10222
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1181.504 ; gain = 274.523 ; free physical = 127 ; free virtual = 10223
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1516 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc]
+Finished Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc]
+Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FDE => FDRE: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1425.699 ; gain = 2.000 ; free physical = 137 ; free virtual = 10061
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 138 ; free virtual = 10074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 138 ; free virtual = 10074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for doHistStretch_fdiv_32ns_32ns_32_16_U2/doHistStretch_ap_fdiv_14_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/doHistStretch_ap_fmul_2_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 138 ; free virtual = 10074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_197_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 133 ; free virtual = 10084
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 132 ; free virtual = 10084
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIV_OP.SPD.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_197_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design doHistStretch has port s_axi_CTRL_BUS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design doHistStretch has port s_axi_CTRL_BUS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design doHistStretch has port s_axi_CTRL_BUS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design doHistStretch has port s_axi_CTRL_BUS_BRESP[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 132 ; free virtual = 10084
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1425.703 ; gain = 518.723 ; free physical = 132 ; free virtual = 10084
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[8]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[9]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[10]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[11]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[12]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[13]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[14]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[15]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[16]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[17]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[18]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[19]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[20]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[21]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[22]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[23]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[24]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[25]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[26]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[27]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[28]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[29]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[30]' (FDE) to 'doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[0]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[1]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[2]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[3]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[4]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[5]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[6]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[7]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[8]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[9]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[10]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[11]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[12]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[13]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[14]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[15]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[16]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[17]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[18]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[19]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[20]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[21]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[22]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[23]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[24]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[25]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[26]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[27]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[28]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[29]' (FDE) to 'doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[8]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[9]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[10]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[11]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[12]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[13]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[14]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[15]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[16]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[17]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[18]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[19]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[20]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[21]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[22]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[23]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[24]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[25]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[26]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[27]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[28]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[29]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[30]' (FDE) to 'doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[31] )
+INFO: [Synth 8-3886] merging instance 'doHistStretch_CTRL_BUS_s_axi_U/rstate_reg[1]' (FDS) to 'doHistStretch_CTRL_BUS_s_axi_U/rstate_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\doHistStretch_CTRL_BUS_s_axi_U/wstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/wstate_reg[2]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rstate_reg[1]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[31]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[30]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[29]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[28]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[27]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[26]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[25]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[24]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[23]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[22]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[21]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[20]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[19]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[18]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[17]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[16]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[15]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[14]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[13]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[12]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[11]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[10]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[9]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_CTRL_BUS_s_axi_U/rdata_data_reg[8]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[31]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[30]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[29]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[28]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[27]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[26]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[25]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[24]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[23]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[22]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[21]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[20]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[19]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[18]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[17]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[16]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[15]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[14]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[13]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[12]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[11]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[10]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[9]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[8]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[7]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[6]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[5]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[4]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[3]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[2]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[1]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/din1_buf1_reg[0]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[30]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[29]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[28]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[27]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[26]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[25]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[24]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[23]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[22]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[21]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[20]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[19]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[18]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[17]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[16]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[15]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[14]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[13]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[12]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[11]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[10]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[9]) is unused and will be removed from module doHistStretch.
+WARNING: [Synth 8-3332] Sequential element (doHistStretch_sitofp_32s_32_6_U3/din0_buf1_reg[8]) is unused and will be removed from module doHistStretch.
+INFO: [Synth 8-3886] merging instance 'doHistStretch_fdiv_32ns_32ns_32_16_U2/doHistStretch_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'doHistStretch_fdiv_32ns_32ns_32_16_U2/doHistStretch_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][3]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][2]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][3]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][2]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][1]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][3]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][2]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][1]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][3]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][2]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][1]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][3]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][2]) is unused and will be removed from module floating_point_v7_1_2_viv__parameterized1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1441.723 ; gain = 534.742 ; free physical = 132 ; free virtual = 10064
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1441.723 ; gain = 534.742 ; free physical = 132 ; free virtual = 10064
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1480.715 ; gain = 573.734 ; free physical = 145 ; free virtual = 10014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1494.730 ; gain = 587.750 ; free physical = 135 ; free virtual = 10003
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 136 ; free virtual = 9985
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 136 ; free virtual = 9985
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 136 ; free virtual = 9985
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    14|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    29|
+|6     |LUT2      |   206|
+|7     |LUT3      |   650|
+|8     |LUT4      |    74|
+|9     |LUT5      |   129|
+|10    |LUT6      |   134|
+|11    |MUXCY     |   751|
+|12    |MUXF7     |     8|
+|13    |SRL16E    |    41|
+|14    |SRLC32E   |    17|
+|15    |XORCY     |   745|
+|16    |FDE       |    16|
+|17    |FDRE      |  1287|
+|18    |FDSE      |     2|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.902 ; gain = 601.922 ; free physical = 135 ; free virtual = 9985
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 301 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1508.902 ; gain = 269.641 ; free physical = 135 ; free virtual = 9985
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.910 ; gain = 601.930 ; free physical = 135 ; free virtual = 9985
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1529 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 231 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 215 instances
+  FDE => FDRE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+187 Infos, 185 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1508.910 ; gain = 526.430 ; free physical = 132 ; free virtual = 9987
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1540.922 ; gain = 0.000 ; free physical = 135 ; free virtual = 9984
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 21 00:28:07 2016...
+[Tue Jun 21 00:28:09 2016] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.14 ; elapsed = 00:01:22 . Memory (MB): peak = 1099.996 ; gain = 7.875 ; free physical = 756 ; free virtual = 10617
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc:2]
+Finished Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1365.680 ; gain = 265.684 ; free physical = 417 ; free virtual = 10352
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1365.680 ; gain = 0.000 ; free physical = 399 ; free virtual = 10339
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1761.199 ; gain = 395.520 ; free physical = 137 ; free virtual = 9921
+[Tue Jun 21 00:28:28 2016] Launched impl_1...
+Run output will be captured here: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/runme.log
+[Tue Jun 21 00:28:28 2016] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log doHistStretch.vdi -applog -m64 -messageDb vivado.pb -mode batch -source doHistStretch.tcl -notrace
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source doHistStretch.tcl -notrace
+Command: open_checkpoint /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/doHistStretch.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 979.457 ; gain = 0.000 ; free physical = 142 ; free virtual = 9834
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-24535-darkin-UX303LN/dcp/doHistStretch.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc:2]
+Finished Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-24535-darkin-UX303LN/dcp/doHistStretch.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1257.594 ; gain = 278.137 ; free physical = 155 ; free virtual = 9549
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1294.609 ; gain = 37.016 ; free physical = 150 ; free virtual = 9546
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 8ebf4a6a
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: aeac7ad9
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 156 ; free virtual = 9200
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 101 cells.
+Phase 2 Constant Propagation | Checksum: 101a0239b
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.49 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 154 ; free virtual = 9201
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 1067 unconnected nets.
+INFO: [Opt 31-11] Eliminated 181 unconnected cells.
+Phase 3 Sweep | Checksum: 104567366
+
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.89 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 145 ; free virtual = 9200
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 145 ; free virtual = 9200
+Ending Logic Optimization Task | Checksum: 104567366
+
+Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.92 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 145 ; free virtual = 9200
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 104567366
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1648.102 ; gain = 0.000 ; free physical = 142 ; free virtual = 9200
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1648.102 ; gain = 390.508 ; free physical = 142 ; free virtual = 9200
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/doHistStretch_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 143 ; free virtual = 9182
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 142 ; free virtual = 9181
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 141 ; free virtual = 9182
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.94 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 135 ; free virtual = 9182
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.95 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 135 ; free virtual = 9182
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.95 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 135 ; free virtual = 9182
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ff9ca94e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 135 ; free virtual = 9182
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 18f3a6584
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1698.992 ; gain = 0.000 ; free physical = 133 ; free virtual = 9182
+Phase 1.2.1 Place Init Design | Checksum: 1a14d3430
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1733.648 ; gain = 34.656 ; free physical = 121 ; free virtual = 9175
+Phase 1.2 Build Placer Netlist Model | Checksum: 1a14d3430
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1733.648 ; gain = 34.656 ; free physical = 121 ; free virtual = 9175
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1a14d3430
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1733.648 ; gain = 34.656 ; free physical = 120 ; free virtual = 9175
+Phase 1 Placer Initialization | Checksum: 1a14d3430
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1733.648 ; gain = 34.656 ; free physical = 120 ; free virtual = 9175
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 20a6448c3
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 152 ; free virtual = 9173
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 20a6448c3
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 152 ; free virtual = 9173
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23859e4c4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 152 ; free virtual = 9173
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 233e55478
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 152 ; free virtual = 9173
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 233e55478
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 151 ; free virtual = 9173
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1e8ed8cd2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 151 ; free virtual = 9173
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1e8ed8cd2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 151 ; free virtual = 9173
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1ce3f400b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 147 ; free virtual = 9170
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1d8265898
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 147 ; free virtual = 9170
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1d8265898
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 147 ; free virtual = 9170
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1d8265898
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 146 ; free virtual = 9170
+Phase 3 Detail Placement | Checksum: 1d8265898
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 146 ; free virtual = 9170
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 21b9cbb82
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.277. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 1126ba200
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+Phase 4.1 Post Commit Optimization | Checksum: 1126ba200
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1126ba200
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1126ba200
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 1126ba200
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 1181c7ff9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1181c7ff9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+Ending Placer Task | Checksum: b3d82722
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1757.660 ; gain = 58.668 ; free physical = 138 ; free virtual = 9168
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 133 ; free virtual = 9168
+report_io: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 151 ; free virtual = 9151
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 156 ; free virtual = 9157
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 147 ; free virtual = 9155
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 135d5feec
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.81 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 141 ; free virtual = 9155
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+Ending Physical Synthesis Task | Checksum: 128811746
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 140 ; free virtual = 9156
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1757.660 ; gain = 0.000 ; free physical = 136 ; free virtual = 9156
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 3567f05c ConstDB: 0 ShapeSum: 259d150f RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_AWADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_AWADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WSTRB[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WSTRB[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_BREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_BREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_ARVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_ARVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_RREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_RREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "outStream_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "outStream_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CTRL_BUS_WDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CTRL_BUS_WDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TID[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TID[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TKEEP[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TKEEP[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TLAST[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TLAST[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TID[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TID[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TID[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TID[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TUSER[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TUSER[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TID[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TID[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TID[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TID[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TSTRB[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TSTRB[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TUSER[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TUSER[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inStream_TDEST[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inStream_TDEST[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: 12c394409
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1857.324 ; gain = 99.664 ; free physical = 137 ; free virtual = 8864
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 12c394409
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1857.328 ; gain = 99.668 ; free physical = 135 ; free virtual = 8863
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 12c394409
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1869.324 ; gain = 111.664 ; free physical = 119 ; free virtual = 8850
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 12c394409
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1869.324 ; gain = 111.664 ; free physical = 119 ; free virtual = 8850
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 12023acad
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 129 ; free virtual = 8856
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.361  | TNS=0.000  | WHS=-0.184 | THS=-18.009|
+
+Phase 2 Router Initialization | Checksum: 130bba9fb
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 131 ; free virtual = 8871
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 18fe77aad
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 129 ; free virtual = 8871
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 112
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1b3dd0f9e
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.450  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1935d1b35
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1e0f6050d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.436  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1e0f6050d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+Phase 4 Rip-up And Reroute | Checksum: 1e0f6050d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 11165345d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.551  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 11165345d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 11165345d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+Phase 5 Delay and Skew Optimization | Checksum: 11165345d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 20801e54f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.551  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1fc9e10c3
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+Phase 6 Post Hold Fix | Checksum: 1fc9e10c3
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.232785 %
+  Global Horizontal Routing Utilization  = 0.317444 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1105d0708
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 134 ; free virtual = 8871
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1105d0708
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 133 ; free virtual = 8870
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: efc39184
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 132 ; free virtual = 8869
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.551  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: efc39184
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 131 ; free virtual = 8870
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 131 ; free virtual = 8870
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 1875.379 ; gain = 117.719 ; free physical = 124 ; free virtual = 8869
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1877.379 ; gain = 0.000 ; free physical = 119 ; free virtual = 8869
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/doHistStretch_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 21 00:29:39 2016...
+[Tue Jun 21 00:29:40 2016] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.14 ; elapsed = 00:01:12 . Memory (MB): peak = 1805.215 ; gain = 7.996 ; free physical = 1015 ; free virtual = 9799
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/.Xil/Vivado-23577-darkin-UX303LN/dcp/doHistStretch.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/doHistStretch.xdc:2]
+Finished Parsing XDC File [/home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/.Xil/Vivado-23577-darkin-UX303LN/dcp/doHistStretch.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1891.215 ; gain = 2.000 ; free physical = 837 ; free virtual = 9763
+Restored from archive | CPU: 0.140000 secs | Memory: 2.411575 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1891.215 ; gain = 2.000 ; free physical = 837 ; free virtual = 9763
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_utilization: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1939.215 ; gain = 2.000 ; free physical = 799 ; free virtual = 9725
+
+
+Implementation tool: Xilinx Vivado v.2016.1
+Project:             image_contrast_adj
+Solution:            solution1
+Device target:       xc7z020clg484-1
+Report date:         Tue Jun 21 00:29:43 CEST 2016
+
+#=== Resource usage ===
+SLICE:          393
+LUT:           1142
+FF:            1208
+DSP:              3
+BRAM:             0
+SRL:             49
+#=== Final timing ===
+CP required:    10.000
+CP achieved:    7.448
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 21 00:29:43 2016...

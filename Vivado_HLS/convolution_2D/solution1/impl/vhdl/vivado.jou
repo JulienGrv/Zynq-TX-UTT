@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 21 16:43:01 2016
+# Process ID: 20175
+# Current directory: /home/darkin/Workspace/Vivado_HLS/convolution_2D/solution1/impl/vhdl
+# Command line: vivado -notrace -mode batch -source run_vivado.tcl
+# Log file: /home/darkin/Workspace/Vivado_HLS/convolution_2D/solution1/impl/vhdl/vivado.log
+# Journal file: /home/darkin/Workspace/Vivado_HLS/convolution_2D/solution1/impl/vhdl/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace

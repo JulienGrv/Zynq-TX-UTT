@@ -1,0 +1,8 @@
+02:08:57 **** Incremental Build of configuration Release for project ContrastApp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+
+02:08:57 Build Finished (took 122ms)
+

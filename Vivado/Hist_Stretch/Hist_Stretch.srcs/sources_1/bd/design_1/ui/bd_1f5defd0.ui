@@ -1,0 +1,46 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 640 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 660 -defaultsOSRD
+preplace inst doHistStretch_0 -pg 1 -lvl 3 -y 360 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 3 -y 750 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 880 -defaultsOSRD
+preplace inst doHist_0 -pg 1 -lvl 3 -y 80 -defaultsOSRD
+preplace inst doHist_0_bram -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 430 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 660 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 720 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 6 1 NJ
+preplace netloc axis_broadcaster_0_M00_AXIS 1 2 1 710
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 770
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 2 NJ 470 1120
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 4 390 460 NJ 460 NJ 320 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 410 870 NJ 870 NJ 870 NJ 870 NJ 870 2300
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 30 790 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 2280
+preplace netloc axis_broadcaster_0_M01_AXIS 1 2 1 N
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1840
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 4 380 270 760 510 1130 570 1530
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 720
+preplace netloc doHist_0_histo_PORTA 1 3 1 1110
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 1520
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1500
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 770 400 260 750 450 1150 340 1510 580 1830 850 2290
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 4 410 440 NJ 440 NJ 350 1490
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 N
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 730
+preplace netloc doHistStretch_0_outStream 1 3 1 1130
+levelinfo -pg 1 0 200 560 940 1320 1680 2060 2320 -top 0 -bot 970
+",
+}
+{
+   da_axi4_cnt: "7",
+   da_board_cnt: "1",
+   da_bram_cntlr_cnt: "1",
+   da_ps7_cnt: "1",
+}

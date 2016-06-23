@@ -1,0 +1,135 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Jun 23 02:31:16 2016
+| Host         : darkin-UX303LN running 64-bit elementary OS Freya
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+-----------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 21
+
+2. REPORT DETAILS
+-----------------
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); 
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_7_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_7_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_7_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_7_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_7_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_6_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_6_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_6_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_6_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_6_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_5_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_5_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_5_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_5_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_5_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_4_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_4_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_4_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_4_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg has an input control pin design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/doImgProc_0/U0/doImgProc_KERNEL_BUS_s_axi_U/int_kernel/gen_write[1].mem_reg_i_4_n_0) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

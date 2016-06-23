@@ -1,0 +1,29 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xdohist.h"
+#include "xdohiststretch.h"
+#include "LenaOnCode.h"
+#include "AxiTimerHelper.h"
+
+#define SIZE_ARR (512*512)
+
+// Memory used by DMA
+#define MEM_BASE_ADDR 	0x01000000
+#define TX_BUFFER_BASE	(MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE	(MEM_BASE_ADDR + 0x00300000)
+
+// Get a pointer to the TX and RX dma buffer (CONFIGURE DMA)
+// The pointers are for 8-bit memory but their addresses are 32 bit (u32)
+unsigned char *m_dma_buffer_TX = (unsigned char*)TX_BUFFER_BASE;
+unsigned char *m_dma_buffer_RX = (unsigned char*)RX_BUFFER_BASE;
+
+unsigned int hist_sw[256];
+
+int main()
+{
+	return 0;
+}

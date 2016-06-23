@@ -1,0 +1,17 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xdohist.h"
+#include "xdohiststretch.h"
+#include "LenaOnCode.h"
+#include "AxiTimerHelper.h"
+
+#define SIZE_ARR (512*512)
+
+int main()
+{
+	return 0;
+}

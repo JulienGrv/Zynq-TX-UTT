@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'doHist'
+================================================================
+* Date:           Mon Jun 20 20:42:16 2016
+
+* Version:        2016.1 (Build 1538259 on Fri Apr 08 16:12:49 MDT 2016)
+* Project:        image_histogram
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.86|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  524546|  524546|  524547|  524547|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |          |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name|   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- Loop 1  |     256|     256|         1|          1|          1|     256|    yes   |
+        |- Loop 2  |  524288|  524288|         2|          -|          -|  262144|    no    |
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     72|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      -|      36|     40|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     98|
+|Register         |        -|      -|      59|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      95|    210|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+-----------------------+---------+-------+----+----+
+    |         Instance        |         Module        | BRAM_18K| DSP48E| FF | LUT|
+    +-------------------------+-----------------------+---------+-------+----+----+
+    |doHist_CTRL_BUS_s_axi_U  |doHist_CTRL_BUS_s_axi  |        0|      0|  36|  40|
+    +-------------------------+-----------------------+---------+-------+----+----+
+    |Total                    |                       |        0|      0|  36|  40|
+    +-------------------------+-----------------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |idxHist_1_fu_137_p2   |     +    |      0|  0|   9|           9|           1|
+    |idxPixel_1_fu_154_p2  |     +    |      0|  0|  19|          19|           1|
+    |tmp_4_fu_169_p2       |     +    |      0|  0|  32|          32|           1|
+    |ap_sig_108            |    and   |      0|  0|   1|           1|           1|
+    |exitcond2_fu_131_p2   |   icmp   |      0|  0|   4|           9|          10|
+    |exitcond_fu_148_p2    |   icmp   |      0|  0|   7|          19|          20|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      0|  0|  72|          89|          34|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm             |   1|          5|    1|          5|
+    |histo_Addr_A_orig     |  32|          4|   32|        128|
+    |histo_Din_A           |  32|          3|   32|         96|
+    |histo_WEN_A           |   4|          2|    4|          8|
+    |idxHist_reg_109       |   9|          2|    9|         18|
+    |idxPixel_reg_120      |  19|          2|   19|         38|
+    |inStream_TDATA_blk_n  |   1|          2|    1|          2|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  98|         20|   98|        295|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |ap_CS_fsm             |   4|   0|    4|          0|
+    |histo_addr_1_reg_192  |   8|   0|    8|          0|
+    |idxHist_reg_109       |   9|   0|    9|          0|
+    |idxPixel_1_reg_187    |  19|   0|   19|          0|
+    |idxPixel_reg_120      |  19|   0|   19|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 |  59|   0|   59|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+-------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++------------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |  in |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_AWREADY  | out |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_AWADDR   |  in |    4|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_WVALID   |  in |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_WREADY   | out |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_WDATA    |  in |   32|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_WSTRB    |  in |    4|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_ARVALID  |  in |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_ARREADY  | out |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_ARADDR   |  in |    4|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_RVALID   | out |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_RREADY   |  in |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_RDATA    | out |   32|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_RRESP    | out |    2|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_BVALID   | out |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_BREADY   |  in |    1|    s_axi   |      CTRL_BUS     |  return void |
+|s_axi_CTRL_BUS_BRESP    | out |    2|    s_axi   |      CTRL_BUS     |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs |       doHist      | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |       doHist      | return value |
+|interrupt               | out |    1| ap_ctrl_hs |       doHist      | return value |
+|inStream_TDATA          |  in |    8|    axis    | inStream_V_data_V |    pointer   |
+|inStream_TVALID         |  in |    1|    axis    | inStream_V_data_V |    pointer   |
+|inStream_TREADY         | out |    1|    axis    | inStream_V_dest_V |    pointer   |
+|inStream_TDEST          |  in |    6|    axis    | inStream_V_dest_V |    pointer   |
+|inStream_TKEEP          |  in |    1|    axis    | inStream_V_keep_V |    pointer   |
+|inStream_TSTRB          |  in |    1|    axis    | inStream_V_strb_V |    pointer   |
+|inStream_TUSER          |  in |    2|    axis    | inStream_V_user_V |    pointer   |
+|inStream_TLAST          |  in |    1|    axis    | inStream_V_last_V |    pointer   |
+|inStream_TID            |  in |    5|    axis    |  inStream_V_id_V  |    pointer   |
+|histo_Addr_A            | out |   32|    bram    |       histo       |     array    |
+|histo_EN_A              | out |    1|    bram    |       histo       |     array    |
+|histo_WEN_A             | out |    4|    bram    |       histo       |     array    |
+|histo_Din_A             | out |   32|    bram    |       histo       |     array    |
+|histo_Dout_A            |  in |   32|    bram    |       histo       |     array    |
+|histo_Clk_A             | out |    1|    bram    |       histo       |     array    |
+|histo_Rst_A             | out |    1|    bram    |       histo       |     array    |
++------------------------+-----+-----+------------+-------------------+--------------+
+

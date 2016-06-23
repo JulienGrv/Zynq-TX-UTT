@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Jun 20 19:32:10 2016
+# Process ID: 14943
+# Current directory: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/doHistStretch/xsim_script.tcl}
+# Log file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/xsim.log
+# Journal file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/doHistStretch/xsim_script.tcl
+# xsim {doHistStretch} -autoloadwcfg -tclbatch {doHistStretch.tcl}
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source doHistStretch.tcl
+## run all
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0

@@ -1,0 +1,25 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <stdio.h>
+#include "define.h"
+#include "xaxidma.h"
+#include "xdohist.h"
+#include "xdohiststretch.h"
+#include "LenaOnCode.h"
+#include "AxiTimerHelper.h"
+
+// Get a pointer to the TX and RX dma buffer (CONFIGURE DMA)
+// The pointers are for 8-bit memory but their addresses are 32 bit (u32)
+unsigned char *m_dma_buffer_TX = (unsigned char*)TX_BUFFER_BASE;
+unsigned char *m_dma_buffer_RX = (unsigned char*)RX_BUFFER_BASE;
+
+unsigned int hist_sw[PIXEL_RANGE];
+unsigned char imgOut[IMG_WIDTH * IMG_HEIGHT]
+
+int main()
+{
+
+	return 0;
+}

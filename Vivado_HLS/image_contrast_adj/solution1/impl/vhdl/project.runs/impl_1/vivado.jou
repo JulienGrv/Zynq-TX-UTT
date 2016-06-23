@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 21 00:28:28 2016
+# Process ID: 24535
+# Current directory: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1
+# Command line: vivado -log doHistStretch.vdi -applog -messageDb vivado.pb -mode batch -source doHistStretch.tcl -notrace
+# Log file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/doHistStretch.vdi
+# Journal file: /home/darkin/Workspace/Vivado_HLS/image_contrast_adj/solution1/impl/vhdl/project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source doHistStretch.tcl -notrace

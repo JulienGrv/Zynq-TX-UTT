@@ -1,0 +1,213 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'doHistStretch'" level="0">
+<item name = "Date">Tue Jun 21 00:24:27 2016
+</item>
+<item name = "Version">2016.1 (Build 1538259 on Fri Apr 08 16:12:49 MDT 2016)</item>
+<item name = "Project">image_contrast_adj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.13, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">262177, 262177, 262178, 262178, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">262169, 262169, 27, 1, 1, 262144, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 302</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 3, 1308, 1941</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 59</column>
+<column name="Register">-, -, 224, 17</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, 1, 4</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="doHistStretch_CTRL_BUS_s_axi_U">doHistStretch_CTRL_BUS_s_axi, 0, 0, 64, 72</column>
+<column name="doHistStretch_fdiv_32ns_32ns_32_16_U2">doHistStretch_fdiv_32ns_32ns_32_16, 0, 0, 761, 994</column>
+<column name="doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1">doHistStretch_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
+<column name="doHistStretch_sitofp_32s_32_6_U3">doHistStretch_sitofp_32s_32_6, 0, 0, 340, 554</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="idxPixel_1_fu_203_p2">+, 0, 0, 19, 19, 1</column>
+<column name="sh_assign_fu_283_p2">+, 0, 0, 9, 8, 9</column>
+<column name="tmp_1_fu_186_p2">-, 0, 0, 9, 9, 9</column>
+<column name="tmp_4_fu_241_p2">-, 0, 0, 9, 9, 9</column>
+<column name="tmp_4_i_i_fu_297_p2">-, 0, 0, 8, 7, 8</column>
+<column name="ap_sig_192">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond_fu_197_p2">icmp, 0, 0, 7, 19, 20</column>
+<column name="tmp_7_i_i_fu_326_p2">lshr, 0, 0, 63, 24, 24</column>
+<column name="outStream_TDATA">select, 0, 0, 8, 1, 8</column>
+<column name="sh_assign_1_fu_306_p3">select, 0, 0, 9, 1, 9</column>
+<column name="tmp_9_i_i_fu_332_p2">shl, 0, 0, 160, 54, 54</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">4, 10, 1, 10</column>
+<column name="ap_reg_ppiten_pp0_it26">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_outStream_TREADY">1, 2, 1, 2</column>
+<column name="grp_fu_177_p0">32, 3, 32, 96</column>
+<column name="idxPixel_reg_157">19, 2, 19, 38</column>
+<column name="inStream_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="outStream_TDATA_blk_n">1, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">9, 0, 9, 0</column>
+<column name="ap_reg_ioackin_outStream_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it13">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it14">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it15">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it16">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it17">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it18">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it19">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it20">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it21">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it22">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it23">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it24">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it25">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it26">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 0, 1, 0</column>
+<column name="exitcond_reg_394">1, 0, 1, 0</column>
+<column name="idxPixel_reg_157">19, 0, 19, 0</column>
+<column name="loc_V_1_reg_454">23, 0, 23, 0</column>
+<column name="loc_V_reg_448">8, 0, 8, 0</column>
+<column name="tmp_5_reg_438">32, 0, 32, 0</column>
+<column name="tmp_6_reg_443">32, 0, 32, 0</column>
+<column name="tmp_cast_reg_379">8, 0, 9, 1</column>
+<column name="tmp_dest_V_reg_428">6, 0, 6, 0</column>
+<column name="tmp_id_V_reg_423">5, 0, 5, 0</column>
+<column name="tmp_keep_V_reg_403">1, 0, 1, 0</column>
+<column name="tmp_last_V_reg_418">1, 0, 1, 0</column>
+<column name="tmp_strb_V_reg_408">1, 0, 1, 0</column>
+<column name="tmp_user_V_reg_413">2, 0, 2, 0</column>
+<column name="xMax_minus_xMin_reg_389">32, 0, 32, 0</column>
+<column name="xMax_read_reg_369">8, 0, 8, 0</column>
+<column name="xMin_read_reg_374">8, 0, 8, 0</column>
+<column name="exitcond_reg_394">0, 1, 1, 0</column>
+<column name="tmp_dest_V_reg_428">0, 6, 6, 0</column>
+<column name="tmp_id_V_reg_423">0, 5, 5, 0</column>
+<column name="tmp_keep_V_reg_403">0, 1, 1, 0</column>
+<column name="tmp_last_V_reg_418">0, 1, 1, 0</column>
+<column name="tmp_strb_V_reg_408">0, 1, 1, 0</column>
+<column name="tmp_user_V_reg_413">0, 2, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_BUS_AWVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_AWREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_AWADDR">in, 5, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WDATA">in, 32, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WSTRB">in, 4, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARADDR">in, 5, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RVALID">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RREADY">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RDATA">out, 32, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RRESP">out, 2, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BVALID">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BREADY">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BRESP">out, 2, s_axi, CTRL_BUS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, doHistStretch, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, doHistStretch, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, doHistStretch, return value</column>
+<column name="inStream_TDATA">in, 8, axis, inStream_V_data_V, pointer</column>
+<column name="inStream_TVALID">in, 1, axis, inStream_V_data_V, pointer</column>
+<column name="inStream_TREADY">out, 1, axis, inStream_V_dest_V, pointer</column>
+<column name="inStream_TDEST">in, 6, axis, inStream_V_dest_V, pointer</column>
+<column name="inStream_TKEEP">in, 1, axis, inStream_V_keep_V, pointer</column>
+<column name="inStream_TSTRB">in, 1, axis, inStream_V_strb_V, pointer</column>
+<column name="inStream_TUSER">in, 2, axis, inStream_V_user_V, pointer</column>
+<column name="inStream_TLAST">in, 1, axis, inStream_V_last_V, pointer</column>
+<column name="inStream_TID">in, 5, axis, inStream_V_id_V, pointer</column>
+<column name="outStream_TDATA">out, 8, axis, outStream_V_data_V, pointer</column>
+<column name="outStream_TVALID">out, 1, axis, outStream_V_dest_V, pointer</column>
+<column name="outStream_TREADY">in, 1, axis, outStream_V_dest_V, pointer</column>
+<column name="outStream_TDEST">out, 6, axis, outStream_V_dest_V, pointer</column>
+<column name="outStream_TKEEP">out, 1, axis, outStream_V_keep_V, pointer</column>
+<column name="outStream_TSTRB">out, 1, axis, outStream_V_strb_V, pointer</column>
+<column name="outStream_TUSER">out, 2, axis, outStream_V_user_V, pointer</column>
+<column name="outStream_TLAST">out, 1, axis, outStream_V_last_V, pointer</column>
+<column name="outStream_TID">out, 5, axis, outStream_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,76 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Tue Jun 21 00:29:04 2016
+| Host         : darkin-UX303LN running 64-bit elementary OS Freya
+| Command      : report_control_sets -verbose -file doHistStretch_control_sets_placed.rpt
+| Design       : doHistStretch
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |           16 |
+| Yes          | No                    | No                     |            1058 |          307 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             106 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                  Enable Signal                                 |                                                              Set/Reset Signal                                                             | Slice Load Count | Bel Load Count |
++--------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | doHistStretch_CTRL_BUS_s_axi_U/waddr                                           |                                                                                                                                           |                1 |              5 |
+|  ap_clk      |                                                                                | doHistStretch_fdiv_32ns_32ns_32_16_U2/doHistStretch_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_UP_DELAY/i_pipe/p_27_out__0 |                3 |              7 |
+|  ap_clk      |                                                                                | doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/doHistStretch_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/EXP/SIG_DELAY/i_pipe/p_27_out__0     |                2 |              7 |
+|  ap_clk      | doHistStretch_CTRL_BUS_s_axi_U/ar_hs                                           |                                                                                                                                           |                3 |              8 |
+|  ap_clk      | doHistStretch_CTRL_BUS_s_axi_U/p_0_in13_out                                    |                                                                                                                                           |                1 |              8 |
+|  ap_clk      | doHistStretch_CTRL_BUS_s_axi_U/p_0_in11_out                                    |                                                                                                                                           |                1 |              8 |
+|  ap_clk      | ap_sig_177                                                                     |                                                                                                                                           |                2 |              8 |
+|  ap_clk      |                                                                                |                                                                                                                                           |                7 |              8 |
+|  ap_clk      | ap_reg_ppiten_pp0_it10                                                         |                                                                                                                                           |                6 |             16 |
+|  ap_clk      | doHistStretch_CTRL_BUS_s_axi_U/E[0]                                            |                                                                                                                                           |                4 |             16 |
+|  ap_clk      | inStream_TREADY                                                                | idxPixel_reg_157                                                                                                                          |                5 |             19 |
+|  ap_clk      | doHistStretch_sitofp_32s_32_6_U3/ap_NS_fsm5                                    | doHistStretch_CTRL_BUS_s_axi_U/ARESET                                                                                                     |                4 |             21 |
+|  ap_clk      | doHistStretch_fdiv_32ns_32ns_32_16_U2/E[0]                                     | doHistStretch_fmul_32ns_32ns_32_4_max_dsp_U1/doHistStretch_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/EXP/SIG_DELAY/i_pipe/SR[0]           |                7 |             22 |
+|  ap_clk      | doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u_i_1_n_0 | doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/SR[0]        |                7 |             22 |
+|  ap_clk      | doHistStretch_fdiv_32ns_32ns_32_16_U2/E[0]                                     | doHistStretch_fdiv_32ns_32ns_32_16_U2/doHistStretch_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_UP_DELAY/i_pipe/SR[0]       |                6 |             22 |
+|  ap_clk      |                                                                                | doHistStretch_CTRL_BUS_s_axi_U/ARESET                                                                                                     |               11 |             22 |
+|  ap_clk      | loc_V_1_reg_4540                                                               |                                                                                                                                           |                9 |             31 |
+|  ap_clk      | ap_sig_188                                                                     |                                                                                                                                           |               12 |             31 |
+|  ap_clk      | tmp_6_reg_4430                                                                 |                                                                                                                                           |                9 |             31 |
+|  ap_clk      | tmp_5_reg_4380                                                                 |                                                                                                                                           |                9 |             31 |
+|  ap_clk      | doHistStretch_sitofp_32s_32_6_U3/ap_NS_fsm5                                    |                                                                                                                                           |               17 |             43 |
+|  ap_clk      | doHistStretch_sitofp_32s_32_6_U3/doHistStretch_ap_sitofp_4_no_dsp_32_u_i_1_n_0 |                                                                                                                                           |               33 |             86 |
+|  ap_clk      | doHistStretch_fdiv_32ns_32ns_32_16_U2/E[0]                                     |                                                                                                                                           |              220 |            790 |
++--------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
