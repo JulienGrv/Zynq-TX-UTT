@@ -1,7 +1,7 @@
 # Zynq-TX-UTT
 > TX about image processing to evaluate hardware acceleration performance on a Xilinx Zynq-7000 SoC ZC702
 
-In this report and associated Vivado source code, we try to evaluate the hardware acceleration perfomance of the Xilinx Zynq-7000 SoC ZC702 using image processing functions in C++, synthesised into HDL block IP with Vivado HLS.
+In this report and associated Vivado source code, we try to evaluate the hardware acceleration perfomance of the Xilinx Zynq-7000 SoC ZC702 using image processing functions in C++, synthesised into HDL block IP with Vivado HLS and implemented on an ARM+FPGA interconnected architecture.
 
 ## Authors
 
