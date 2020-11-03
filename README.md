@@ -5,7 +5,7 @@ In this report and associated Vivado source code, we try to evaluate the hardwar
 
 ## Authors
 
-* **Pierre Avital** - *Initial work* - [CptFox](https://github.com/CptFox)
+* **Pierre Avital** - *Initial work* - [p-avital](https://github.com/p-avital)
 * **Julien Grave** - *Initial work* - [JulienGrv](https://github.com/JulienGrv)
 
 See also the list of [contributors](https://github.com/JulienGrv/Zynq-TX-UTT/contributors) who participated in this project.
